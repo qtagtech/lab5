@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="" />
+    <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="nest5Blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -113,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="45" selection-start="104" selection-end="108" vertical-scroll-proportion="0.037694015">
+            <state line="12" column="4" selection-start="197" selection-end="197" vertical-scroll-proportion="-4.163265">
               <folding />
             </state>
           </provider>
@@ -140,10 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="254" column="28" selection-start="3848" selection-end="17787" vertical-scroll-proportion="0.0">
+            <state line="287" column="11" selection-start="19317" selection-end="19317" vertical-scroll-proportion="10.293249">
               <folding />
             </state>
           </provider>
@@ -161,7 +166,7 @@
       <file leaf-file-name="_form.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/category/_form.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+            <state line="17" column="28" selection-start="515" selection-end="515" vertical-scroll-proportion="-0.3469388">
               <folding />
             </state>
           </provider>
@@ -208,8 +213,8 @@
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/category/_form.gsp" />
         <option value="$PROJECT_DIR$/web-app/template/style.css" />
-        <option value="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
       </list>
     </option>
   </component>
@@ -250,7 +255,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
@@ -573,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/category/_form.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/post/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="36" selection-end="51" vertical-scroll-proportion="0.0">
@@ -608,16 +606,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/category/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="28" selection-start="3848" selection-end="17787" vertical-scroll-proportion="0.0">
+        <state line="17" column="28" selection-start="515" selection-end="515" vertical-scroll-proportion="-0.3469388">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="45" selection-start="104" selection-end="108" vertical-scroll-proportion="0.037694015">
+        <state line="12" column="4" selection-start="197" selection-end="197" vertical-scroll-proportion="-4.163265">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="287" column="11" selection-start="19317" selection-end="19317" vertical-scroll-proportion="10.293249">
           <folding />
         </state>
       </provider>
@@ -649,6 +654,82 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>grails-2.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>nest5Blog</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

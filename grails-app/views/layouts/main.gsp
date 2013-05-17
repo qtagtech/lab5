@@ -75,7 +75,7 @@
     <div class="container topm_cont">
 
         <!-- topmenu -->
-       %{-- <nav id="topmenu">
+        <nav id="topmenu">
             <ul class="dropdown">
                 <li class="menu-level-0 current-menu-ancestor"><a href="#"><span>Styles</span></a>
                     <ul class="submenu-1">
@@ -252,7 +252,7 @@
                 </li>
             </ul>
             <div class="clear"></div>
-        </nav>--}%
+        </nav>
         <!--/ topmenu -->
 
         <div class="topbar">

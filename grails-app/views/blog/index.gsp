@@ -3,7 +3,7 @@
 <html>
 	<head>
 
-		%{--<meta name="layout" content="main"/>--}%
+		<meta name="layout" content="main"/>
 
 		<title>Nest5, Además te informa</title>
 
