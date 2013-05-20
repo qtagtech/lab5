@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="${resource(dir:'template/styles', file: 'blue.css')}">
         <!-- custom CSS -->
         <link rel="stylesheet" href="${resource(dir:'template', file: 'custom.css')}">
-
+        <r:require modules="jquery"/>
         <!-- main JS libs  -->
     <script src="${resource(dir:'template/js/libs', file: 'modernizr-2.5.3.min.js')}"></script>
     <script src="${resource(dir:'template/js/libs', file: 'respond.min.js')}"></script>
