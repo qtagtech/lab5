@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nest5Blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BlogController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="132" selection-start="143" selection-end="1312" vertical-scroll-proportion="0.79141104">
+            <state line="33" column="132" selection-start="143" selection-end="1312" vertical-scroll-proportion="-16.826086">
               <folding />
             </state>
           </provider>
@@ -120,7 +120,25 @@
       <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="4" selection-start="197" selection-end="197" vertical-scroll-proportion="-2.7567568">
+            <state line="12" column="4" selection-start="197" selection-end="197" vertical-scroll-proportion="-4.163265">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSource.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="52" selection-start="986" selection-end="1370" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="88" selection-start="200" selection-end="200" vertical-scroll-proportion="0.45010182">
               <folding />
             </state>
           </provider>
@@ -130,15 +148,6 @@
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="7" selection-start="159" selection-end="1011" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/template/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="273" column="4" selection-start="6287" selection-end="6287" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,15 +180,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/category/_form.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -198,12 +198,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/MyuploadController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/post/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/org/nest5/User.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/org/nest5/Category.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/org/nest5/Post.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/category/_form.gsp" />
@@ -214,6 +212,8 @@
         <option value="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
       </list>
     </option>
   </component>
@@ -265,6 +265,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -506,24 +507,11 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/org/nest5/Category.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.7708334">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../../SDK/grails-2.2.0/src/grails-datastore-gorm-1.1.2.RELEASE-sources.jar!/org/grails/datastore/gorm/GormStaticApi.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.33265308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/org/nest5/Archivo.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="27" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
@@ -586,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="197" selection-end="197" vertical-scroll-proportion="-2.7567568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="265" column="3" selection-start="18419" selection-end="18435" vertical-scroll-proportion="-86.84615">
@@ -614,6 +595,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="132" selection-start="143" selection-end="1312" vertical-scroll-proportion="-16.826086">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/CategoryController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="77" selection-start="115" selection-end="185" vertical-scroll-proportion="-4.4347825">
@@ -621,9 +609,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="132" selection-start="143" selection-end="1312" vertical-scroll-proportion="0.79141104">
+        <state line="12" column="4" selection-start="197" selection-end="197" vertical-scroll-proportion="-4.163265">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="52" selection-start="986" selection-end="1370" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="88" selection-start="200" selection-end="200" vertical-scroll-proportion="0.45010182">
           <folding />
         </state>
       </provider>
