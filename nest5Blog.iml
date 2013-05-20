@@ -54,8 +54,8 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="grails-2.2" level="application" />
-    <orderEntry type="library" name="grails-2.2.2" level="application" />
     <orderEntry type="module" module-name="nest5Blog-grailsPlugins" />
+    <orderEntry type="library" name="grails-2.2.0" level="application" />
   </component>
 </module>
 

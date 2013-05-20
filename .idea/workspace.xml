@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nest5Blog-grailsPlugins.iml" afterPath="$PROJECT_DIR$/nest5Blog-grailsPlugins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nest5Blog.iml" afterPath="$PROJECT_DIR$/nest5Blog.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -34,7 +31,7 @@
     <file path="/UrlMappings.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368570477629" ignored="false" />
     <file path="/BlogController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369065943409" ignored="false" />
     <file path="/Config.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368822528695" ignored="false" />
-    <file path="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369069207690" ignored="false" />
+    <file path="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369075580801" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +95,7 @@
       <file leaf-file-name="PostController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="28" selection-start="3904" selection-end="3904" vertical-scroll-proportion="0.034764826">
+            <state line="134" column="29" selection-start="4768" selection-end="4768" vertical-scroll-proportion="0.54805726">
               <folding />
             </state>
           </provider>
@@ -621,7 +618,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="28" selection-start="3904" selection-end="3904" vertical-scroll-proportion="0.034764826">
+        <state line="134" column="29" selection-start="4768" selection-end="4768" vertical-scroll-proportion="0.54805726">
           <folding />
         </state>
       </provider>
