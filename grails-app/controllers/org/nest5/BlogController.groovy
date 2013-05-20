@@ -18,11 +18,13 @@ class BlogController {
             }
         }
 
-        def mercadeo = Category.findByAlias('mercadeo')?.posts.sort {it.date}
+        def mercadeo = Category.findByAlias('mercadeo')?.posts?.sort {it.date}
         def tecnologia = Category.findByAlias('tecnologia')?.posts?.sort {it.date}
         def emprendimiento = Category.findByAlias('emprendimiento')?.posts?.sort {it.date}
         def noticias = Category.findByAlias('noticias')?.posts?.sort {it.date}
-         def all = mercadeo + tecnologia + emprendimiento + noticias
+        def all = [mercadeo,tecnologia,emprendimiento,noticias]*.keySet().flatten().unique().collectEntries {
+            [ (it): [mercadeo,tecnologia,emprendimiento,noticias]*.get( it ).findAll().sum() ]
+        }
         println all
         all?.sort {it?.date}
         all?.take(20)
