@@ -6,7 +6,7 @@ import org.nest5.User
 class BootStrap {
 
     def init = { servletContext ->
-
+/*
         def adminRole = SecRole.findByAuthority('ROLE_ADMIN') ?: new SecRole(authority: 'ROLE_ADMIN').save(failOnError: true)
 
 
@@ -25,7 +25,7 @@ class BootStrap {
 
         if (!adminUser.authorities.contains(adminRole)) {
             SecUserSecRole.create adminUser, adminRole
-        }
+        }*/
 
     }
     def destroy = {
