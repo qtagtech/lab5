@@ -263,7 +263,7 @@
         </div>
     </div>
 
-
+    <g:layoutBody/>
 
     <footer>
         <div class="container" style="background-image:url(${resource(dir: 'template/images',file: 'header_img_blue.jpg')}); background-color:#097bb6">
