@@ -214,8 +214,8 @@
         <div class="post_carousel">
             <ul id="postCarousel1">
                 <g:each in="${[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]}">
-                  <g:if test="${all.getAt(it)}">
-                      <g:set var="actual" value="${all.getAt(it)}"/>
+                  <g:if test="${all?.getAt(it)}">
+                      <g:set var="actual" value="${all?.getAt(it)}"/>
                       <li>
                           <a href="${createLink(controller: 'post',action: 'details', params: [id: actual?.id])}"><img src="${Media.findByPostAndIsMain(actual,true)?.file?.ruta}" width="221" height="140" alt=""></a>
                           <div class="slide_caption">

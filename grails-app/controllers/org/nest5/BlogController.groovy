@@ -4,7 +4,7 @@ class BlogController {
 
     def index() {
 
-        def allPost = Post.findAll()
+       /* def allPost = Post.findAll()
         def longi = allPost.size()
         def random = new Random()
         def max = 9
@@ -31,7 +31,7 @@ class BlogController {
 
 
         println all
-        [headerPosts: headerPost,mercadeo: mercadeo,noticias: noticias,tecnologia: tecnologia,emprendimiento:emprendimiento,all:all]
+        [headerPosts: headerPost,mercadeo: mercadeo,noticias: noticias,tecnologia: tecnologia,emprendimiento:emprendimiento,all:all]*/
 
     }
 }
