@@ -65,7 +65,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = true
-        grails.serverURL = "labs5.herokuapp.com"
+        grails.serverURL = "www.nest5.org"
     }
 }
 
