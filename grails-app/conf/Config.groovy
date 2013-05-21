@@ -65,7 +65,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = true
-        grails.serverURL = "www.nest5.org"
+//        grails.serverURL = "www.nest5.org"
     }
 }
 
