@@ -1,3 +1,4 @@
+<%@ page import="org.nest5.Media" %>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
@@ -77,175 +78,248 @@
         <!-- topmenu -->
         <nav id="topmenu">
             <ul class="dropdown">
-                <li class="menu-level-0 current-menu-ancestor"><a href="#"><span>Styles</span></a>
-                    <ul class="submenu-1">
-                        <li class="menu-level-1"><a href="#"><span>Flavors</span></a>
-                            <ul class="submenu-2">
-                                <li class="menu-level-2"><a href="../Black/index.html"><span>Black Style</span></a></li>
-                                <li class="menu-level-2"><a href="../Blue/index.html"><span>Blue Style</span></a></li>
-                                <li class="menu-level-2"><a href="../Red/index.html"><span>Red Style</span></a></li>
-                                <li class="menu-level-2"><a href="../Green/index.html"><span>Green Style</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-level-1 current-menu-ancestor"><a href="#"><span>Home Styles</span></a>
-                            <ul class="submenu-2">
-                                <li class="menu-level-2 current-menu-item"><a href="index.html"><span>Small Header</span></a></li>
-                                <li class="menu-level-2"><a href="index-2.html"><span>Full Header</span></a></li>
-                                <li class="menu-level-2"><a href="index-3.html"><span>Text Logo</span></a></li>
-                                <li class="menu-level-2"><a href="index-no-tags.html"><span>Without Tags</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-level-0"><a href="#"><span>Pages</span></a>
-                    <ul class="submenu-1">
-                        <li class="menu-level-2"><a href="about.html"><span>About us</span></a></li>
-                        <li class="menu-level-2"><a href="contact.html"><span>Contact</span></a></li>
-                        <li class="menu-level-2"><a href="posts-types.html"><span>Post Layouts</span></a></li>
-                        <li class="menu-level-2"><a href="post-details-2.html"><span>Review Page</span></a></li>
-                        <li class="menu-level-2"><a href="posts-list-sidebar-left.html"><span>Sidebar Left</span></a></li>
-                        <li class="menu-level-2"><a href="wp-widgets-layout.html"><span>WP Widgets</span></a></li>
-                        <li class="menu-level-2"><a href="wp-widgets-layout-2.html"><span>Boxed Widgets</span></a></li>
-                    </ul>
-                </li>
-                <li class="menu-level-0"><a href="#"><span>Shortcodes</span></a>
-                    <ul class="submenu-1">
-                        <li class="menu-level-1"><a href="shortcodes-buttons.html"><span>Buttons & Lists</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-text.html"><span>Text & Images</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-charts.html"><span>Charts</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-columns.html"><span>Columns</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-lightbox.html"><span>Lightbox</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-media.html"><span>Videos & Galleries</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-maps.html"><span>Google Maps</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-tabs.html"><span>Tabs & Toggles</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-tables.html"><span>Boxes & Tables</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-typography.html"><span>Typography</span></a></li>
-                        <li class="menu-level-1"><a href="shortcodes-widgets.html"><span>Widgets</span></a></li>
-                    </ul>
-                </li>
-                <li class="menu-level-0"><a href="#"><span>Advertising</span></a>
-                    <ul class="submenu-1">
-                        <li class="menu-level-1"><a href="advertise.html"><span>On Homepage</span></a></li>
-                        <li class="menu-level-1"><a href="post-details-advertise.html"><span>On Post Article</span></a></li>
-                    </ul>
-                </li>
+                <li class="menu-level-0 current-menu-ancestor"><a href="#"><span>Inicio</span></a>
 
-                <li class="menu-level-0 mega-nav"><a href="#"><span>Coolmenu</span></a>
+                </li>
+            <li class="menu-level-0 mega-nav"><a href="#"><span>Noticias</span></a>
+                <ul class="submenu-1">
+                    <li class="menu-level-1 mega-nav-widget">
+                        <!-- widget recent entries -->
+                        <div class="widget-container widget_recent_entries">
+                            <h3 class="widget-title">Lo último</h3>
+
+                            <div class="mega-nav-widget-count"><em>${noticias?.size()}</em></div>
+                            <ul>
+                                <g:each in="${[0,1,2]}">
+                                    <g:if test="${noticias?.toList()?.getAt(it)}">
+                                        <li><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id])}" class="link-name">${noticias?.toList()?.getAt(it).title}</a></li>
+                                    </g:if>
+                                </g:each>
+                            </ul>
+                            <div class="more-nav"><a href=${createLink(controller: 'category',action: 'articles',params: [id: 'noticias'])}">Ver todo en Noticias</a></div>
+                        </div>
+                        <!--/ widget recent entries -->
+                    </li>
+                    <li class="menu-level-1 mega-nav-widget">
+                        <!-- widget featured entries -->
+                        <div class="widget-container widget_featured_posts">
+                            <h3 class="widget-title">Te Recomendamos</h3>
+                            <ul>
+                            %{--AQUI HACER ALGO DE RECOMENDADOS, SEA PARA EL USUARIO, POR MAYOR NÚMERO DE VISITAS O LO QUE SEA--}%
+                                <g:each in="${[0,1]}">
+                                    <g:if test="${noticias?.toList()?.getAt(it)}">
+                                        <li>
+                                            <a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id])}"><img src="${Media.findByPostAndIsMain( noticias?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                            <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id])}" class="link-name">${noticias?.toList().get(it)?.title}</a></div>
+                                        </li>
+                                    </g:if>
+                                </g:each>
+                            </ul>
+                        </div>
+                        <!--/ widget featured entries -->
+                    </li>
+
+                    <li class="menu-level-1"><a href="#"><span>Autores</span></a>
+                        <ul class="submenu-2">
+                            <g:each in="${org.nest5.Category.findByAlias('noticias')?.posts?.collect{it.author}?.unique()}">
+                                <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                            </g:each>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+                <li class="menu-level-0 mega-nav"><a href="#"><span>Mercadeo</span></a>
                     <ul class="submenu-1">
                         <li class="menu-level-1 mega-nav-widget">
                             <!-- widget recent entries -->
                             <div class="widget-container widget_recent_entries">
-                                <h3 class="widget-title">New stories since your last visit</h3>
-                                <div class="mega-nav-widget-count"><em>31</em></div>
+                                <h3 class="widget-title">Lo último</h3>
+
+                                <div class="mega-nav-widget-count"><em>${mercadeo?.size()}</em></div>
                                 <ul>
-                                    <li><a href="post-details.html" class="link-name">What Today’s Video Games Say About The Moment We Live In</a></li>
-                                    <li><a href="post-details.html" class="link-name">Nike Twitter campaign banned in the UK after Wayne Rooney tweet breaks advertising rules</a>					                </li>
-                                    <li><a href="post-details.html" class="link-name">Google threatens site that rips YouTube music videos into MP3s</a></li>
+                                    <g:each in="${[0,1,2]}">
+                                        <g:if test="${mercadeo?.toList()?.getAt(it)}">
+                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id])}" class="link-name">${mercadeo?.toList()?.getAt(it).title}</a></li>
+                                        </g:if>
+                                    </g:each>
                                 </ul>
-                                <div class="more-nav"><a href="posts-grid.html">See ALL THE NEW STORIES</a></div>
+                                <div class="more-nav"><a href="${createLink(controller: 'category',action: 'articles',params: [id: 'mercadeo'])}">Ver todo en Mercadeo</a></div>
                             </div>
                             <!--/ widget recent entries -->
                         </li>
                         <li class="menu-level-1 mega-nav-widget">
                             <!-- widget featured entries -->
                             <div class="widget-container widget_featured_posts">
-                                <h3 class="widget-title">We recommend</h3>
+                                <h3 class="widget-title">Te Recomendamos</h3>
                                 <ul>
-                                    <li>
-                                        <a href="post-details.html"><img src="${resource(dir:'template/images/temp', file:'post_thumb_1.jpg')}" alt="" class="thumbnail"></a>
-                                        <div class="recent_entry"><a href="post-details.html" class="link-name">What Today’s Video Games Say About The Moment We Live In</a></div>
-                                    </li>
-                                    <li>
-                                        <a href="post-details.html"><img src="${resource(dir:'template/images/temp', file: 'post_thumb_2.jpg')}" alt="" class="thumbnail"></a>
-                                        <div class="recent_entry"><a href="post-details.html" class="link-name">Nike Twitter campaign banned in the UK after Wayne Rooney tweet breaks advertising rules</a></div>
-                                    </li>
+                                %{--AQUI HACER ALGO DE RECOMENDADOS, SEA PARA EL USUARIO, POR MAYOR NÚMERO DE VISITAS O LO QUE SEA--}%
+                                    <g:each in="${[0,1]}">
+                                        <g:if test="${mercadeo?.toList()?.getAt(it)}">
+                                            <li>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id])}"><img src="${Media.findByPostAndIsMain( mercadeo?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id])}" class="link-name">${mercadeo?.toList().get(it)?.title}</a></div>
+                                            </li>
+                                        </g:if>
+                                    </g:each>
                                 </ul>
                             </div>
                             <!--/ widget featured entries -->
                         </li>
-                        <li class="menu-level-1"><a href="#"><span>Subcategories</span></a>
+
+                        <li class="menu-level-1"><a href="#"><span>Autores</span></a>
                             <ul class="submenu-2">
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Action</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Comedy</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Horror</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Sport</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Romance</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Science Fiction</span></a></li>
-                                <li class="menu-level-2 more-nav"><a href="posts-grid.html"><span>See ALL Movies</span></a></li>
+                                <g:each in="${org.nest5.Category.findByAlias('mercadeo')?.posts?.collect{it.author}?.unique()}">
+                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                </g:each>
                             </ul>
                         </li>
 
                     </ul>
                 </li>
-                <li class="menu-level-0 mega-nav"><a href="#"><span>Games</span></a>
+                <li class="menu-level-0 mega-nav"><a href="#"><span>Emprendimiento</span></a>
                     <ul class="submenu-1">
-
                         <li class="menu-level-1 mega-nav-widget">
-                            <!-- widget text -->
-                            <div class="widget-container widget_text">
-                                <h3 class="widget-title">Text Widget in Mega Menu</h3>
-                                <div class="textwidget">
-                                    <p>Easily add a functional and highly customizable Mega Menu to your WordPress website. Choose your option of five different color schemes within the WordPress admin, or style it to your liking with your own stylesheet. In addition, the plugin has added shortcode functionality to better customize your menu’s content.</p>
-                                </div>
+                            <!-- widget recent entries -->
+                            <div class="widget-container widget_recent_entries">
+                                <h3 class="widget-title">Lo último</h3>
+
+                                <div class="mega-nav-widget-count"><em>${emprendimiento?.size()}</em></div>
+                                <ul>
+                                    <g:each in="${[0,1,2]}">
+                                        <g:if test="${emprendimiento?.toList()?.getAt(it)}">
+                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id])}" class="link-name">${emprendimiento?.toList()?.getAt(it).title}</a></li>
+                                        </g:if>
+                                    </g:each>
+                                </ul>
+                                <div class="more-nav"><a href="${createLink(controller: 'category',action: 'articles',params: [id: 'emprendimiento'])}">Ver todo en Emprendimiento</a></div>
                             </div>
-                            <!--/ widget text -->
-                        </li>
-                        <li class="menu-level-1"><a href="#"><span>Subcategories</span></a>
-                            <ul class="submenu-2">
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Action</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Comedy</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Horror</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Sport</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Romance</span></a></li>
-                                <li class="menu-level-2 more-nav"><a href="posts-grid.html"><span>See ALL Movies</span></a></li>
-                            </ul>
+                            <!--/ widget recent entries -->
                         </li>
                         <li class="menu-level-1 mega-nav-widget">
                             <!-- widget featured entries -->
                             <div class="widget-container widget_featured_posts">
-                                <h3 class="widget-title">We recommend</h3>
+                                <h3 class="widget-title">Te Recomendamos</h3>
                                 <ul>
-                                    <li>
-                                        <a href="post-details.html"><img src="${resource(dir:'template/images/temp', file: 'post_thumb_1.jpg')}" alt="" class="thumbnail"></a>
-                                        <div class="recent_entry"><a href="post-details.html" class="link-name">What Today’s Video Games Say About The Moment We Live In</a></div>
-                                    </li>
-                                    <li>
-                                        <a href="post-details.html"><img src="${resource(dir: 'template/images/temp', file: 'post_thumb_2.jpg')}" alt="" class="thumbnail"></a>
-                                        <div class="recent_entry"><a href="post-details.html" class="link-name">Nike Twitter campaign banned in the UK after Wayne Rooney tweet breaks advertising rules</a></div>
-                                    </li>
+                                %{--AQUI HACER ALGO DE RECOMENDADOS, SEA PARA EL USUARIO, POR MAYOR NÚMERO DE VISITAS O LO QUE SEA--}%
+                                    <g:each in="${[0,1]}">
+                                        <g:if test="${emprendimiento?.toList()?.getAt(it)}">
+                                            <li>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id])}"><img src="${Media.findByPostAndIsMain( emprendimiento?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id])}" class="link-name">${emprendimiento?.toList().get(it)?.title}</a></div>
+                                            </li>
+                                        </g:if>
+                                    </g:each>
                                 </ul>
                             </div>
                             <!--/ widget featured entries -->
                         </li>
 
+                        <li class="menu-level-1"><a href="#"><span>Autores</span></a>
+                            <ul class="submenu-2">
+                                <g:each in="${org.nest5.Category.findByAlias('emprendimiento')?.posts?.collect{it.author}?.unique()}">
+                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                </g:each>
+                            </ul>
+                        </li>
+
                     </ul>
                 </li>
-                <li class="menu-level-0"><a href="posts-grid.html"><span>Technology</span></a></li>
-                <li class="menu-level-0"><a href="posts-grid.html"><span>Marketplace</span></a></li>
-                <li class="menu-level-0 mega-nav"><a href="#"><span>Movies</span></a>
+                <li class="menu-level-0 mega-nav"><a href="#"><span>Tecnología</span></a>
                     <ul class="submenu-1">
-                        <li class="menu-level-1"><a href="#"><span>TV Shows</span></a>
+                        <li class="menu-level-1 mega-nav-widget">
+                            <!-- widget recent entries -->
+                            <div class="widget-container widget_recent_entries">
+                                <h3 class="widget-title">Lo último</h3>
+
+                                <div class="mega-nav-widget-count"><em>${tecnologia?.size()}</em></div>
+                                <ul>
+                                    <g:each in="${[0,1,2]}">
+                                        <g:if test="${tecnologia?.toList()?.getAt(it)}">
+                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id])}" class="link-name">${tecnologia?.toList()?.getAt(it).title}</a></li>
+                                        </g:if>
+                                    </g:each>
+                                </ul>
+                                <div class="more-nav"><a href="${createLink(controller: 'category',action: 'articles',params: [id: 'tecnologia'])}">Ver todo en Tecnología</a></div>
+                            </div>
+                            <!--/ widget recent entries -->
+                        </li>
+                        <li class="menu-level-1 mega-nav-widget">
+                            <!-- widget featured entries -->
+                            <div class="widget-container widget_featured_posts">
+                                <h3 class="widget-title">Te Recomendamos</h3>
+                                <ul>
+                                %{--AQUI HACER ALGO DE RECOMENDADOS, SEA PARA EL USUARIO, POR MAYOR NÚMERO DE VISITAS O LO QUE SEA--}%
+                                    <g:each in="${[0,1]}">
+                                        <g:if test="${tecnologia?.toList()?.getAt(it)}">
+                                            <li>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id])}"><img src="${Media.findByPostAndIsMain( tecnologia?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id])}" class="link-name">${tecnologia?.toList().get(it)?.title}</a></div>
+                                            </li>
+                                        </g:if>
+                                    </g:each>
+                                </ul>
+                            </div>
+                            <!--/ widget featured entries -->
+                        </li>
+
+                        <li class="menu-level-1"><a href="#"><span>Autores</span></a>
                             <ul class="submenu-2">
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Action</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Comedy</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Horror</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Sport</span></a></li>
+                                <g:each in="${org.nest5.Category.findByAlias('tecnologia')?.posts?.collect{it.author}?.unique()}">
+                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                </g:each>
                             </ul>
                         </li>
-                        <li class="menu-level-1"><a href="#"><span>Cinema</span></a>
+
+                    </ul>
+                </li>
+                <li class="menu-level-0"><a href="#"><span>interesante</span></a>
+                    <ul class="submenu-1">
+                        <li class="menu-level-2"><a href="about.html"><span>Sobre Lab5</span></a></li>
+                        <li class="menu-level-2"><a href="contact.html"><span>Contacto</span></a></li>
+                    </ul>
+                </li>
+                <li class="menu-level-0"><a href="#"><span>Publicidad</span></a>
+
+                </li>
+
+
+
+
+
+                <li class="menu-level-0 mega-nav"><a href="#"><span>Autores</span></a>
+                    <ul class="submenu-1">
+                        <li class="menu-level-1"><a href="#"><span>Noticias</span></a>
                             <ul class="submenu-2">
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Comedy</span></a></li>
-                                <li class="menu-level-2"><a href="#"><span>Drama</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Romance</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Horror</span></a></li>
+                                <g:each in="${org.nest5.Category.findByAlias('noticias')?.posts?.collect{it.author}?.unique()}">
+                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                </g:each>
                             </ul>
                         </li>
-                        <li class="menu-level-1"><a href="#"><span>Trailers</span></a>
+                        <li class="menu-level-1"><a href="#"><span>Mercadeo</span></a>
                             <ul class="submenu-2">
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Action</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Comedy</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Horror</span></a></li>
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>Sport</span></a></li>
+                                <g:each in="${org.nest5.Category.findByAlias('mercadeo')?.posts?.collect{it.author}?.unique()}">
+                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                </g:each>
+                            </ul>
+                        </li>
+                        <li class="menu-level-1"><a href="#"><span>Emprendimiento</span></a>
+                            <ul class="submenu-2">
+                                <g:each in="${org.nest5.Category.findByAlias('emprendimiento')?.posts?.collect{it.author}?.unique()}">
+                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                </g:each>
+                            </ul>
+                        </li>
+                        <li class="menu-level-1"><a href="#"><span>Tecnología</span></a>
+                            <ul class="submenu-2">
+                                <g:each in="${org.nest5.Category.findByAlias('tecnología')?.posts?.collect{it.author}?.unique()}">
+                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                </g:each>
+                            </ul>
+                        </li>
+                        <li class="menu-level-1"><a href="#"><span>¿Quieres ser Autor?</span></a>
+                            <ul class="submenu-2">
+
                             </ul>
                         </li>
                     </ul>
@@ -256,9 +330,9 @@
         <!--/ topmenu -->
 
         <div class="topbar">
-            <div class="top_share"><span class="social_title">SHARE</span> <a href="#" class="social_google">Google +1</a> <a href="#" class="social_fb">Facebook</a> <a href="#" class="social_twitter">Twitter</a> <a href="#" class="social_pinterest">Pinterest</a></div>
+            <div class="top_share"><span class="social_title">Social</span> %{--<a href="#" class="social_google">Google +1</a>--}% <a href="#" class="social_fb">Facebook</a> <a href="#" class="social_twitter">Twitter</a> <a href="#" class="social_pinterest">Pinterest</a></div>
 
-            <span class="top_filter"><a href="#" class="link_mostcomm">Most commented</a> <a href="#" class="link_pick">Editor’s Picks</a> <a href="#" class="link_mostlike">Most liked</a> <a href="#" class="link_random">Random story</a></span>
+            <span class="top_filter"><a href="#" class="link_mostcomm">Lo más comentado</a> <a href="#" class="link_pick">Selección de la Editora</a> <a href="#" class="link_mostlike">Lo que más gusta</a> <a href="#" class="link_random">Artículo Aleatorio</a></span>
             <div class="clear"></div>
         </div>
     </div>
@@ -270,17 +344,17 @@
 
             <div class="footer_right">
                 <ul class="botmenu">
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#">AUTHORS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="advertise.html">ADVERTISE</a></li>
-                    <li><a href="#">PRIVACY</a></li>
-                    <li><a href="#">TERMS</a></li>
+                    <li><a href="about.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="#">AUTORES</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                    <li><a href="advertise.html">PUBLICIDAD</a></li>
+                    <li><a href="#">PRIVACIDAD</a></li>
+                    <li><a href="#">TÉRMINOS</a></li>
                 </ul>
             </div>
 
             <div class="footer_left">
-                <img src="${resource(dir: 'template/styles/blue', file: 'logo_footer.png')}" width="230" height="50" alt="">
+                <img src="${resource(dir: 'images', file: 'Nest5_Labs_Logo_small.png')}" width="230" height="50" alt="">
             </div>
 
             <div class="clear"></div>

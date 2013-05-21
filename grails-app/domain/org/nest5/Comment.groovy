@@ -1,6 +1,7 @@
 package org.nest5
 
 class Comment {
+    static belongsTo = [post: Post]
 
     String email
     Date date
@@ -14,5 +15,6 @@ class Comment {
 
     static mapping = {
         content type: 'text'
+        sort date: "desc"
     }
 }

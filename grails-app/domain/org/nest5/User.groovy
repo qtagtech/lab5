@@ -17,4 +17,8 @@ class User extends SecUser {
         bio type: 'text'
 
     }
+
+    String toString(){
+        name
+    }
 }

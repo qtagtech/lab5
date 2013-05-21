@@ -1,24 +1,25 @@
 package org.nest5
 
 import org.springframework.dao.DataIntegrityViolationException
+import org.springframework.security.access.annotation.Secured
 
 class CategoryController {
-
+    def springSecurityService
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
         redirect(action: "list", params: params)
     }
-
+    @Secured(["ROLE_ADMIN"])
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         [categoryInstanceList: Category.list(params), categoryInstanceTotal: Category.count()]
     }
-
+    @Secured(["ROLE_ADMIN"])
     def create() {
         [categoryInstance: new Category(params)]
     }
-
+    @Secured(["ROLE_ADMIN"])
     def save() {
         def categoryInstance = new Category(params)
         if (!categoryInstance.save(flush: true)) {
@@ -29,7 +30,7 @@ class CategoryController {
         flash.message = message(code: 'default.created.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.id])
         redirect(action: "show", id: categoryInstance.id)
     }
-
+    @Secured(["ROLE_ADMIN"])
     def show(Long id) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
@@ -40,7 +41,7 @@ class CategoryController {
 
         [categoryInstance: categoryInstance]
     }
-
+    @Secured(["ROLE_ADMIN"])
     def edit(Long id) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
@@ -51,7 +52,7 @@ class CategoryController {
 
         [categoryInstance: categoryInstance]
     }
-
+    @Secured(["ROLE_ADMIN"])
     def update(Long id, Long version) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
@@ -80,7 +81,7 @@ class CategoryController {
         flash.message = message(code: 'default.updated.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.id])
         redirect(action: "show", id: categoryInstance.id)
     }
-
+    @Secured(["ROLE_ADMIN"])
     def delete(Long id) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
@@ -98,5 +99,25 @@ class CategoryController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'category.label', default: 'Category'), id])
             redirect(action: "show", id: id)
         }
+    }
+
+    def articles(String id){
+        def cat = Category.findByAlias(params.id)
+
+        def all = cat?.posts
+        def offset =  params.offset ? params.offset as Integer : 0
+        def i = 0
+        def articles =  []
+        while(i < Math.min(params.max ? params.max as Integer : 10, 100))
+        {
+          if(!all.toList()[offset])
+              break
+
+          articles += all.toList()[offset]
+            offset++
+            i++
+        }
+
+        [articles: articles, articlesTotal: all?.size(),category: cat]
     }
 }
