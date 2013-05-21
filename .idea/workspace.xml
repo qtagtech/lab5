@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy" />
     </list>
     <ignored path="nest5Blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +32,7 @@
     <file path="/CategoryController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369090714437" ignored="false" />
     <file path="/articles.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369090808718" ignored="false" />
     <file path="/CommentController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369150581846" ignored="false" />
-    <file path="/UserController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369154819670" ignored="false" />
+    <file path="/UserController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369165392405" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,15 +93,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CategoryController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/CategoryController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="48" selection-start="4518" selection-end="4518" vertical-scroll-proportion="-22.47826">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Post.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/org/nest5/Post.groovy">
           <provider selected="true" editor-type-id="text-editor">
@@ -176,10 +167,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UserController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="28" selection-start="3032" selection-end="3032" vertical-scroll-proportion="-9.0">
+            <state line="32" column="11" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.4358209">
               <folding>
                 <element signature="e#19#81#0" expanded="true" />
               </folding>
@@ -187,10 +178,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="135" selection-start="168" selection-end="285" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="11" selection-start="2901" selection-end="2901" vertical-scroll-proportion="0.35857806">
+            <state line="68" column="11" selection-start="2901" selection-end="2901" vertical-scroll-proportion="-46.24">
               <folding />
             </state>
           </provider>
@@ -228,8 +228,8 @@
         <option value="$PROJECT_DIR$/grails-app/domain/org/nest5/Comment.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy" />
       </list>
     </option>
   </component>
@@ -528,13 +528,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/category/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="63" selection-start="1720" selection-end="1767" vertical-scroll-proportion="-3.1351352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="62" selection-start="954" selection-end="954" vertical-scroll-proportion="-0.73913044">
@@ -627,15 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="28" selection-start="3032" selection-end="3032" vertical-scroll-proportion="-9.0">
-          <folding>
-            <element signature="e#19#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/org/nest5/User.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="12" selection-start="280" selection-end="280" vertical-scroll-proportion="-7.4375">
@@ -648,8 +632,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="11" selection-start="2901" selection-end="2901" vertical-scroll-proportion="0.35857806">
+        <state line="68" column="11" selection-start="2901" selection-end="2901" vertical-scroll-proportion="-46.24">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="135" selection-start="168" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="11" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.4358209">
+          <folding>
+            <element signature="e#19#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

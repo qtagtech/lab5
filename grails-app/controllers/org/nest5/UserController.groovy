@@ -27,6 +27,10 @@ class UserController {
             render(view: "create", model: [userInstance: userInstance])
             return
         }
+        def adminRole = SecRole.findByAuthority('ROLE_ADMIN') ?: new SecRole(authority: 'ROLE_ADMIN').save(failOnError: true)
+        if (!userInstance.authorities.contains(adminRole)) {
+            SecUserSecRole.create userInstance, adminRole
+        }
 
         flash.message = message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])
         redirect(action: "show", id: userInstance.id)
