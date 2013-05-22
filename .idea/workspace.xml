@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
     </list>
     <ignored path="nest5Blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="40" selection-start="507" selection-end="507" vertical-scroll-proportion="0.3926097">
+            <state line="19" column="40" selection-start="507" selection-end="507" vertical-scroll-proportion="102.87755">
               <folding />
             </state>
           </provider>
@@ -147,10 +147,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="122" selection-start="4098" selection-end="4098" vertical-scroll-proportion="-26.666666">
+            <state line="375" column="13" selection-start="22579" selection-end="22579" vertical-scroll-proportion="0.92111367">
               <folding />
             </state>
           </provider>
@@ -215,10 +215,10 @@
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/CategoryController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       </list>
     </option>
   </component>
@@ -594,13 +594,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="122" selection-start="4098" selection-end="4098" vertical-scroll-proportion="-26.666666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/CategoryController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="164" selection-start="4965" selection-end="4965" vertical-scroll-proportion="-22.565218">
@@ -631,7 +624,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="40" selection-start="507" selection-end="507" vertical-scroll-proportion="0.3926097">
+        <state line="19" column="40" selection-start="507" selection-end="507" vertical-scroll-proportion="102.87755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="375" column="13" selection-start="22579" selection-end="22579" vertical-scroll-proportion="0.92111367">
           <folding />
         </state>
       </provider>
