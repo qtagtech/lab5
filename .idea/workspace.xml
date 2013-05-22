@@ -7,7 +7,7 @@
     <ignored path="nest5Blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/main.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369249951429" ignored="false" />
+    <file path="/main.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369250355361" ignored="false" />
     <file path="/Dummy.txt" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369237035887" ignored="false" />
     <file path="/index.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369249394712" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/Grails/lib/grails_integration.jar!/org/jetbrains/plugins/grails/lang/gsp/resolve/taglib/tld/grails.tld" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368200277007" ignored="false" />
@@ -150,7 +150,7 @@
       <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="356" column="81" selection-start="21907" selection-end="21907" vertical-scroll-proportion="0.48723897">
+            <state line="356" column="83" selection-start="21909" selection-end="21909" vertical-scroll-proportion="0.72389793">
               <folding />
             </state>
           </provider>
@@ -631,7 +631,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="356" column="81" selection-start="21907" selection-end="21907" vertical-scroll-proportion="0.48723897">
+        <state line="356" column="83" selection-start="21909" selection-end="21909" vertical-scroll-proportion="0.72389793">
           <folding />
         </state>
       </provider>
