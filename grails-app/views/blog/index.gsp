@@ -260,7 +260,7 @@
             <g:else>
                 <g:set var="penultimom" value="${mercadeo?.toList()?.get(mercadeo.size() - 2)}"/>
             </g:else>
-            <g:if test="${mercadeo?.size() < 3}">
+            <g:if test="${noticias?.size() < 3}">
                 <g:set var="penultimon" value="${noticias?.toList()?.get(0)}"/>
             </g:if>
             <g:else>
