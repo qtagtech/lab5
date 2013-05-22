@@ -17,7 +17,7 @@
                 <g:each in="${headerPosts}" var="post" status="j">
                     <g:set var="media" value="${Media.findByPostAndIsMain(post, true)}"/>
 
-                    <li <g:if test="${post?.content?.length() * 0.015 > 50}">class="slide_1_4"</g:if><g:else>class="slide_1_2"</g:else>>
+                    <li class="slide_1_2" %{--<g:if test="${post?.content?.length() * 0.015 > 50}">class="slide_1_4"</g:if><g:else>class="slide_1_2"</g:else>--}%>
                         <a href="${createLink(controller: 'post',action: 'details', params: [id: post?.id])}"><img src="${media?.file?.ruta}" <g:if  test="${post?.content?.length() % 32 > 55}">width="233" height="300"</g:if><g:else>width="468" height="300"</g:else> alt=""></a>
                         %{--<div class="score_box">6,4 <span>Ranking</span></div>--}%
                         <g:if test="${media.file.tipo == 'video'}"><span class="icon_video"></span></g:if>
