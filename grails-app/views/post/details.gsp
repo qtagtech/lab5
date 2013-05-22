@@ -256,7 +256,7 @@
     <div class="divider"></div>
     
     <!-- grid layout, 3 cols -->
-            <div class="posts_layout grid_layout">
+           %{-- <div class="posts_layout grid_layout">
 
                 <g:each in="${[3,4,5]}">
                     <g:if test="${latest?.get(it)}">
@@ -264,7 +264,7 @@
                             <div class="post-image">
                                 <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" width="300" height="192" alt=""></a>
                                 <div class="post-cat"><span>${latest?.get(it)?.category?.name}</span></div>
-                                %{--<div class="score_box">5 <span>our score</span></div>--}%
+                                --}%%{--<div class="score_box">5 <span>our score</span></div>--}%%{--
                             </div>
                             <div class="post-title">
                                 <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}">${latest?.get(it)?.title}</a></h2>
@@ -281,12 +281,12 @@
                 <!-- post with slider -->
                 	<div class="post-item postThumbs postSliderThumbs">
 
-                        <g:each in="${[6,78,9,10]}">
+                        <g:each in="${[6,7,8,9,10]}">
                             <g:if test="${latest?.get(it)}">
                                 <div class="postThumbs-container" id="postSlider2">
 
                                     <div class="post-slide">
-                                        %{--<div class="score_box">6,4 <span>our score</span></div>--}%
+                                        --}%%{--<div class="score_box">6,4 <span>our score</span></div>--}%%{--
                                         <div class="post-image">
                                             <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" width="78" height="78" alt=""></a>
                                             <div class="post-cat"><span>${latest?.get(it)?.category?.name}</span></div>
@@ -306,7 +306,7 @@
 	                              
 	                	<div class="clear"></div>
 	                	<div class="postSlider_pag" id="postSlider2_pag"></div>
-	                </div>  
+	                </div>
 	                <script>
 						jQuery(document).ready(function($) {
 							$('#postSlider2').carouFredSel({
@@ -322,7 +322,7 @@
 	            <!--/ post with slider -->
                         
 			<div class="clear"></div>	 
-            </div>
+            </div>--}%
             <!-- grid layout, 3 cols -->
         	
 </div>
