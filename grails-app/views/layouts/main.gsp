@@ -62,8 +62,8 @@
 
                 <div class="header_left">
                     <div class="logo">
-                        <a href="index.html"><img src="${resource(dir: 'images',file: 'Nest5_Labs_Logo_small2.png')}" alt=""></a>
-                        <h1>Newssetter - Premium WordPress Theme</h1>
+                        <a href="${createLink(controller: 'blog', action: 'index')}"><img src="${resource(dir: 'images',file: 'Nest5_Labs_Logo_small2.png')}" alt=""></a>
+                        <h1>Lab5 - El sitio informativo Nest5</h1>
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@
         <!-- topmenu -->
         <nav id="topmenu">
             <ul class="dropdown">
-                <li class="menu-level-0 current-menu-ancestor"><a href="#"><span>Inicio</span></a>
+                <li class="menu-level-0 current-menu-ancestor"><a href="${createLink(controller: 'blog', action: 'index')}"><span>Inicio</span></a>
 
                 </li>
             <li class="menu-level-0 mega-nav"><a href="#"><span>Noticias</span></a>

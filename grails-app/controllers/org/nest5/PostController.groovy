@@ -138,7 +138,10 @@ class PostController {
             return
         }
          def tags = postInstance.tags.split(",")
-
-        [postInstance: postInstance,tags: tags ]
+        def mercadeo = Category.findByAlias('mercadeo')?.posts?.sort {it.date}
+        def tecnologia = Category.findByAlias('tecnologia')?.posts?.sort {it.date}
+        def emprendimiento = Category.findByAlias('emprendimiento')?.posts?.sort {it.date}
+        def noticias = Category.findByAlias('noticias')?.posts?.sort {it.date}
+        [postInstance: postInstance,tags: tags, mercadeo: mercadeo, noticias: noticias, emprendimiento: emprendimiento, tecnologia: tecnologia]
     }
 }
