@@ -117,7 +117,10 @@ class CategoryController {
             offset++
             i++
         }
-
-        [articles: articles, articlesTotal: all?.size(),category: cat]
+        def mercadeo = Category.findByAlias('mercadeo')?.posts?.sort {it.date}
+        def tecnologia = Category.findByAlias('tecnologia')?.posts?.sort {it.date}
+        def emprendimiento = Category.findByAlias('emprendimiento')?.posts?.sort {it.date}
+        def noticias = Category.findByAlias('noticias')?.posts?.sort {it.date}
+        [articles: articles, articlesTotal: all?.size(),category: cat,mercadeo: mercadeo, noticias: noticias, emprendimiento: emprendimiento, tecnologia: tecnologia]
     }
 }
