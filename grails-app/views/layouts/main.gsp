@@ -354,7 +354,7 @@
             </div>
 
             <div class="footer_left">
-                <img src="${resource(dir: 'images', file: 'Nest5_Labs_Logo_small.png')}" width="230" height="50" alt="">
+                <img src="${resource(dir: 'images', file: 'Nest5_Labs_Logo_footer.png')}" width="230" height="50" alt="">
             </div>
 
             <div class="clear"></div>
