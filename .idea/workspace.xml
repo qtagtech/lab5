@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/post/details.gsp" afterPath="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nest5Blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +24,7 @@
     <file path="/PostController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369237185449" ignored="false" />
     <file path="/_form.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368654543650" ignored="false" />
     <file path="/create.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368566771481" ignored="false" />
-    <file path="/details.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369153619962" ignored="false" />
+    <file path="/details.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369692152194" ignored="false" />
     <file path="/UrlMappings.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368570477629" ignored="false" />
     <file path="/BlogController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369085935558" ignored="false" />
     <file path="/Config.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368822528695" ignored="false" />
@@ -143,7 +141,7 @@
       <file leaf-file-name="details.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/post/details.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="29" selection-start="4741" selection-end="4741" vertical-scroll-proportion="0.8333333">
+            <state line="103" column="34" selection-start="4783" selection-end="4783" vertical-scroll-proportion="0.9166667">
               <folding />
             </state>
           </provider>
@@ -629,7 +627,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/post/details.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="29" selection-start="4741" selection-end="4741" vertical-scroll-proportion="0.8333333">
+        <state line="103" column="34" selection-start="4783" selection-end="4783" vertical-scroll-proportion="0.9166667">
           <folding />
         </state>
       </provider>
