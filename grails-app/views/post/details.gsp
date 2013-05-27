@@ -40,18 +40,48 @@
             	<div class="row">
                 	<div class="col col_1_2">
                     	<div class="inner">
-                        	<div class="adv_300"><img src="${resource(dir: 'template/images/temp',file:'adv_300x250.png')}" width="300" height="250" alt=""></div>
+                        	<div class="adv_300"><script type="text/javascript"><!--
+                            google_ad_client = "ca-pub-5955815527107769";
+                            /* Article_300x250_TOP_LEFT */
+                            google_ad_slot = "9802523137";
+                            google_ad_width = 300;
+                            google_ad_height = 250;
+                            //-->
+                            </script>
+                                <script type="text/javascript"
+                                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                                </script></div>
                         </div>
                     </div>
                     <div class="col col_1_2">
                     	<div class="inner">
-                        	<div class="adv_300"><img src="${resource(dir: 'template/images/temp',file:'adv_300x250.png')}" width="300" height="250" alt=""></div>
+                        	<div class="adv_300"><script type="text/javascript"><!--
+                            google_ad_client = "ca-pub-5955815527107769";
+                            /* Article_300x250_TOP_RIGHT */
+                            google_ad_slot = "2279256339";
+                            google_ad_width = 300;
+                            google_ad_height = 250;
+                            //-->
+                            </script>
+                                <script type="text/javascript"
+                                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                                </script></div>
                         </div>
                     </div>
                 </div>
                 <div class="clear"></div>
             
-            <div class="adv_300 alignleft"><img src="${resource(dir: 'template/images/temp',file:'adv_300x250.png')}" width="300" height="250" alt=""></div>
+            <div class="adv_300 alignleft"><script type="text/javascript"><!--
+            google_ad_client = "ca-pub-5955815527107769";
+            /* Article_300x250_BOTOM_LEFT */
+            google_ad_slot = "3755989531";
+            google_ad_width = 300;
+            google_ad_height = 250;
+            //-->
+            </script>
+                <script type="text/javascript"
+                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script></div>
             <p>${postInstance?.content}</p>
 
             %{--<p><span class="quote_right">Surface: PC makers offer no comment as reports conflict on when Microsoft gave them the news</span> HP and Acer declined to offer statements on Microsoft's product plans or its implications for the Windows 8 tablet market. Dell, however, noted that Microsoft was &quot;an important partner&quot; for the company and that it would be delivering Windows 8 tablets of its own later in the year. Lenovo toed the same line, though a company representative did state that its selection of Android and Windows-based tablets put it in a &quot;very strong position&quot; to win &quot;against all comers.&quot;</p>--}%
@@ -59,7 +89,17 @@
 
             <!-- adv: 468x60 center -->
             <div class="adv_content">
-           		<div class="adv_468"><img src="${resource(dir: 'template/images/temp',file:'adv_468x60.png')}" width="468" height="60" alt=""></div>
+           		<div class="adv_468"><script type="text/javascript"><!--
+                google_ad_client = "ca-pub-5955815527107769";
+                /* ARTICLE_BELOW_BANNER */
+                google_ad_slot = "6430254333";
+                google_ad_width = 468;
+                google_ad_height = 60;
+                //-->
+                </script>
+                    <script type="text/javascript"
+                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                    </script></div>
             </div>
             <!--/ adv: 468x60 center -->
 
@@ -234,21 +274,101 @@
 			</div>
 			<!--/ widget_tag_cloud -->
         
-       		<div class="adv_300"><img src="${resource(dir: 'template/images/temp',file:'ads_300x250.jpg')}" width="300" height="250" alt=""></div>
+       		<div class="adv_300"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-5955815527107769";
+/* ARTICLE_RIGHT_TOP */
+google_ad_slot = "2139655535";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+    <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script></div>
             
-            <div class="adv_250"><img src="${resource(dir: 'template/images/temp',file:'adv_250x250.png')}" width="250" height="250" alt=""></div>
+            <div class="adv_250"><script type="text/javascript"><!--
+            google_ad_client = "ca-pub-5955815527107769";
+            /* ARTICLE_RIGHT_1 */
+            google_ad_slot = "8186189138";
+            google_ad_width = 250;
+            google_ad_height = 250;
+            //-->
+            </script>
+                <script type="text/javascript"
+                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script></div>
             
-            <div class="adv_250"><img src="${resource(dir: 'template/images/temp',file:'adv_250x250.png')}" width="250" height="250" alt=""></div>
+            <div class="adv_250"><script type="text/javascript"><!--
+            google_ad_client = "ca-pub-5955815527107769";
+            /* ARTICLE_RIGHT_2 */
+            google_ad_slot = "3616388732";
+            google_ad_width = 250;
+            google_ad_height = 250;
+            //-->
+            </script>
+                <script type="text/javascript"
+                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script></div>
             
         	<div class="adv_125_box">
-	            <div class="adv_125"><img src="${resource(dir: 'template/images/temp',file:'adv_125x125.png')}" width="125" height="125" alt=""></div>
-			    <div class="adv_125"><img src="${resource(dir: 'template/images/temp',file:'adv_125x125.png')}" width="125" height="125" alt=""></div>
-			    <div class="adv_125"><img src="${resource(dir: 'template/images/temp',file:'adv_125x125.png')}" width="125" height="125" alt=""></div>
-	      		<div class="adv_125"><img src="${resource(dir: 'template/images/temp',file:'adv_125x125.png')}" width="125" height="125" alt=""></div>
+	            <div class="adv_125"><script type="text/javascript"><!--
+                google_ad_client = "ca-pub-5955815527107769";
+                /* ARTICLE_GRID_1 */
+                google_ad_slot = "8046588338";
+                google_ad_width = 125;
+                google_ad_height = 125;
+                //-->
+                </script>
+                    <script type="text/javascript"
+                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                    </script></div>
+			    <div class="adv_125"><script type="text/javascript"><!--
+                google_ad_client = "ca-pub-5955815527107769";
+                /* ARTICLE_GRID_&quot; */
+                google_ad_slot = "9523321531";
+                google_ad_width = 125;
+                google_ad_height = 125;
+                //-->
+                </script>
+                    <script type="text/javascript"
+                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                    </script></div>
+			    <div class="adv_125"><script type="text/javascript"><!--
+                google_ad_client = "ca-pub-5955815527107769";
+                /* ARTICLE_GRID_3 */
+                google_ad_slot = "2000054733";
+                google_ad_width = 125;
+                google_ad_height = 125;
+                //-->
+                </script>
+                    <script type="text/javascript"
+                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                    </script></div>
+	      		<div class="adv_125"><script type="text/javascript"><!--
+                google_ad_client = "ca-pub-5955815527107769";
+                /* ARTICLE_GRID_4 */
+                google_ad_slot = "3476787936";
+                google_ad_width = 125;
+                google_ad_height = 125;
+                //-->
+                </script>
+                    <script type="text/javascript"
+                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                    </script></div>
                 <div class="clear"></div>
             </div>
             
-            <div class="adv_160"><img src="${resource(dir: 'template/images/temp',file:'adv_160x600.png')}" width="160" height="600" alt=""></div>
+            <div class="adv_160"><script type="text/javascript"><!--
+            google_ad_client = "ca-pub-5955815527107769";
+            /* ARTICLE_RIGHT_VERTICAL */
+            google_ad_slot = "4953521139";
+            google_ad_width = 160;
+            google_ad_height = 600;
+            //-->
+            </script>
+                <script type="text/javascript"
+                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script></div>
                     
     </div>
     <!--/ sidebar -->

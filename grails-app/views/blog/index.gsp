@@ -311,7 +311,17 @@
         <div class="inner">
 
             <div class="adv_300">
-                <img src="${resource(dir: 'template/images/temp',file: 'ads_300x250.jpg')}" width="300" height="250" alt="">
+                <script type="text/javascript"><!--
+                google_ad_client = "ca-pub-5955815527107769";
+                /* Nest5.org homepage */
+                google_ad_slot = "6849056735";
+                google_ad_width = 300;
+                google_ad_height = 250;
+                //-->
+                </script>
+                <script type="text/javascript"
+                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
             </div>
 
         </div>
