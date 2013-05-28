@@ -39,6 +39,9 @@
     <script src="${resource(dir:'template/js', file: 'jquery.touchwipe.js')}"></script>
     <!-- sliders -->
     <script src="${resource(dir:'template/js', file: 'slides.min.jquery.js')}"></script>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
 	</head>
 	<body>
     <div class="body_wrap homepage">
@@ -373,6 +376,11 @@
         ga('create', 'UA-41111359-1', 'nest5.org');
         ga('send', 'pageview');
 
+    </script>
+    <script type="text/javascript">stLight.options({publisher: "3187d0cf-9482-4903-bb6b-5eb472175117", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+    <script>
+        var options={ "publisher": "3187d0cf-9482-4903-bb6b-5eb472175117", "logo": { "visible": true, "url": "http://www.nest5.org", "img": "http://www.nest5.org/static/images/Nest5_Labs_Logo_small2.png", "height": 45}, "ad": { "visible": false, "openDelay": "5", "closeDelay": "0"}, "livestream": { "domain": "http://www.nest5.org", "type": "sharethis", "src": "", "customColors": { "widgetBackgroundColor": "#FFFFFF", "articleLinkColor": "#006fbb"}}, "ticker": { "visible": true, "domain": "", "title": "Lo más compartido", "type": "sharethis", "src": "", "customColors": { "widgetBackgroundColor": "#4b5c4f", "articleLinkColor": "#FFFFFF"}}, "facebook": { "visible": false, "profile": "sharethis"}, "fblike": { "visible": true, "url": ""}, "twitter": { "visible": false, "user": "sharethis"}, "twfollow": { "visible": false, "url": "http://www.twitter.com/sharethis"}, "custom": [{ "visible": false, "title": "Custom 1", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}, { "visible": false, "title": "Custom 2", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}, { "visible": false, "title": "Custom 3", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}], "chicklets": { "items": ["facebook", "twitter", "googleplus", "pinterest", "linkedin", "stumbleupon", "tumblr", "email", "sharethis"]}, "background": "#659671", "color": "#005a25", "arrowStyle": "light"};
+        var st_bar_widget = new sharethis.widgets.sharebar(options);
     </script>
 	</body>
 </html>
