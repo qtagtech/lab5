@@ -89,17 +89,7 @@
 
             <!-- adv: 468x60 center -->
             <div class="adv_content">
-           		<div class="adv_468"><script type="text/javascript"><!--
-                google_ad_client = "ca-pub-5955815527107769";
-                /* ARTICLE_BELOW_BANNER */
-                google_ad_slot = "6430254333";
-                google_ad_width = 468;
-                google_ad_height = 60;
-                //-->
-                </script>
-                    <script type="text/javascript"
-                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                    </script></div>
+           		<div class="adv_468"<script type='text/javascript' src='http://www.mmadsgadget.com/t?id=1f8985d3-1a8e-4fe5-80d0-f63e38ff1ed3&size=468x60'></script></div>
 
                 %{--a ver pueeesss--}%
             </div>
@@ -278,7 +268,7 @@
         
        		<div class="adv_300"><script type='text/javascript' src='http://www.mmadsgadget.com/t?id=b81e8631-77db-40b5-9e04-d48aa04302b2&size=300x250'></script></div>
             
-            <div class="adv_250"><script type="text/javascript"><!--
+            %{--<div class="adv_250"><script type="text/javascript"><!--
             google_ad_client = "ca-pub-5955815527107769";
             /* ARTICLE_RIGHT_1 */
             google_ad_slot = "8186189138";
@@ -348,7 +338,7 @@
                             src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                     </script></div>
                 <div class="clear"></div>
-            </div>
+            </div>--}%
             
             <div class="adv_160"><script type='text/javascript' src='http://www.mmadsgadget.com/t?id=33c746ca-dc55-4a4b-9aec-bd9661c5be33&size=160x600'></script></div>
                     
