@@ -89,7 +89,7 @@
 
             <!-- adv: 468x60 center -->
             <div class="adv_content">
-           		<div class="adv_468"<script type='text/javascript' src='http://www.mmadsgadget.com/t?id=1f8985d3-1a8e-4fe5-80d0-f63e38ff1ed3&size=468x60'></script></div>
+           		<div class="adv_468"><script type='text/javascript' src='http://www.mmadsgadget.com/t?id=1f8985d3-1a8e-4fe5-80d0-f63e38ff1ed3&size=468x60'></script></div>
 
                 %{--a ver pueeesss--}%
             </div>
