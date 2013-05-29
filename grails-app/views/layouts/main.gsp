@@ -95,7 +95,7 @@
                             <ul>
                                 <g:each in="${[0,1,2]}">
                                     <g:if test="${noticias?.toList()?.getAt(it)}">
-                                        <li><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id])}" class="link-name">${noticias?.toList()?.getAt(it).title}</a></li>
+                                        <li><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id,header: noticias?.toList().get(it)?.address])}" class="link-name">${noticias?.toList()?.getAt(it).title}</a></li>
                                     </g:if>
                                 </g:each>
                             </ul>
@@ -112,8 +112,8 @@
                                 <g:each in="${[0,1]}">
                                     <g:if test="${noticias?.toList()?.getAt(it)}">
                                         <li>
-                                            <a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id])}"><img src="${Media.findByPostAndIsMain( noticias?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
-                                            <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id])}" class="link-name">${noticias?.toList().get(it)?.title}</a></div>
+                                            <a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id, header:  noticias?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain( noticias?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                            <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id, header:  noticias?.toList().get(it)?.address])}" class="link-name">${noticias?.toList().get(it)?.title}</a></div>
                                         </li>
                                     </g:if>
                                 </g:each>
@@ -143,7 +143,7 @@
                                 <ul>
                                     <g:each in="${[0,1,2]}">
                                         <g:if test="${mercadeo?.toList()?.getAt(it)}">
-                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id])}" class="link-name">${mercadeo?.toList()?.getAt(it).title}</a></li>
+                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id,header:  mercadeo?.toList().get(it)?.address])}" class="link-name">${mercadeo?.toList()?.getAt(it).title}</a></li>
                                         </g:if>
                                     </g:each>
                                 </ul>
@@ -160,8 +160,8 @@
                                     <g:each in="${[0,1]}">
                                         <g:if test="${mercadeo?.toList()?.getAt(it)}">
                                             <li>
-                                                <a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id])}"><img src="${Media.findByPostAndIsMain( mercadeo?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
-                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id])}" class="link-name">${mercadeo?.toList().get(it)?.title}</a></div>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id,header: mercadeo?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain( mercadeo?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id,header:  mercadeo?.toList().get(it)?.address])}" class="link-name">${mercadeo?.toList().get(it)?.title}</a></div>
                                             </li>
                                         </g:if>
                                     </g:each>
@@ -191,7 +191,7 @@
                                 <ul>
                                     <g:each in="${[0,1,2]}">
                                         <g:if test="${emprendimiento?.toList()?.getAt(it)}">
-                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id])}" class="link-name">${emprendimiento?.toList()?.getAt(it).title}</a></li>
+                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id,header: emprendimiento?.toList().get(it)?.address])}" class="link-name">${emprendimiento?.toList()?.getAt(it).title}</a></li>
                                         </g:if>
                                     </g:each>
                                 </ul>
@@ -208,8 +208,8 @@
                                     <g:each in="${[0,1]}">
                                         <g:if test="${emprendimiento?.toList()?.getAt(it)}">
                                             <li>
-                                                <a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id])}"><img src="${Media.findByPostAndIsMain( emprendimiento?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
-                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id])}" class="link-name">${emprendimiento?.toList().get(it)?.title}</a></div>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id, header: emprendimiento?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain( emprendimiento?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id,header: emprendimiento?.toList().get(it)?.address])}" class="link-name">${emprendimiento?.toList().get(it)?.title}</a></div>
                                             </li>
                                         </g:if>
                                     </g:each>
@@ -239,7 +239,7 @@
                                 <ul>
                                     <g:each in="${[0,1,2]}">
                                         <g:if test="${tecnologia?.toList()?.getAt(it)}">
-                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id])}" class="link-name">${tecnologia?.toList()?.getAt(it).title}</a></li>
+                                            <li><a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id,header: tecnologia?.toList().get(it)?.address])}" class="link-name">${tecnologia?.toList()?.getAt(it).title}</a></li>
                                         </g:if>
                                     </g:each>
                                 </ul>
@@ -256,8 +256,8 @@
                                     <g:each in="${[0,1]}">
                                         <g:if test="${tecnologia?.toList()?.getAt(it)}">
                                             <li>
-                                                <a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id])}"><img src="${Media.findByPostAndIsMain( tecnologia?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
-                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id])}" class="link-name">${tecnologia?.toList().get(it)?.title}</a></div>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id,header: tecnologia?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain( tecnologia?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id,header: tecnologia?.toList().get(it)?.address])}" class="link-name">${tecnologia?.toList().get(it)?.title}</a></div>
                                             </li>
                                         </g:if>
                                     </g:each>

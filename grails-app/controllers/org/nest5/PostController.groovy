@@ -26,6 +26,19 @@ class PostController {
         postInstance.properties = params
 
         postInstance.author = springSecurityService.currentUser
+        def original = params.title
+        def minus = original.toLowerCase()
+        minus = minus.replaceAll( /([àáâãäå])/, 'a' )
+        minus = minus.replaceAll( /([èéêë])/, 'e' )
+        minus = minus.replaceAll( /([ìíîï])/, 'i' )
+        minus = minus.replaceAll( /([òóôõö])/, 'o' )
+        minus = minus.replaceAll( /([ùúûü])/, 'u' )
+        minus = minus.replaceAll( /([ñ])/, 'n' )
+        minus = minus.replaceAll( /([ýÿ])/, 'y' )
+        minus = minus.replaceAll( /([ç])/, 'c' )
+        minus = minus.replaceAll( /([^a-zA-Z0-9\ ])/, '_' )
+        minus = minus.replaceAll( /([\ ])/, '-' )
+        postInstance.address = minus
         if (!postInstance.save(flush: true)) {
             render(view: "create", model: [postInstance: postInstance])
             return
@@ -143,5 +156,22 @@ class PostController {
         def emprendimiento = Category.findByAlias('emprendimiento')?.posts?.sort {it.date}
         def noticias = Category.findByAlias('noticias')?.posts?.sort {it.date}
         [postInstance: postInstance,tags: tags, mercadeo: mercadeo, noticias: noticias, emprendimiento: emprendimiento, tecnologia: tecnologia]
+    }
+
+    def testString(){
+        def original = params.value
+        def minus = original.toLowerCase()
+         minus = minus.replaceAll( /([àáâãäå])/, 'a' )
+         minus = minus.replaceAll( /([èéêë])/, 'e' )
+         minus = minus.replaceAll( /([ìíîï])/, 'i' )
+         minus = minus.replaceAll( /([òóôõö])/, 'o' )
+         minus = minus.replaceAll( /([ùúûü])/, 'u' )
+         minus = minus.replaceAll( /([ñ])/, 'n' )
+         minus = minus.replaceAll( /([ýÿ])/, 'y' )
+         minus = minus.replaceAll( /([ç])/, 'c' )
+         minus = minus.replaceAll( /([^a-zA-Z0-9\ ])/, '_' )
+         minus = minus.replaceAll( /([\ ])/, '-' )
+        render minus
+        return
     }
 }

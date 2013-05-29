@@ -9,6 +9,7 @@ class Post {
     User author
     String content
     Date date
+    String address
 
 
 

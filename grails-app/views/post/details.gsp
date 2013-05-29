@@ -198,8 +198,8 @@
                     <g:each in="${[0,1,2]}">
                        <g:if test="${latest?.get(it)}">
                            <li>
-                           <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
-                           <div class="recent_entry"><a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}" class="link-name">${latest?.get(it)?.title}</a></div>
+                           <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                           <div class="recent_entry"><a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}" class="link-name">${latest?.get(it)?.title}</a></div>
                            </li>
                        </g:if>
                     </g:each>
@@ -224,11 +224,11 @@
                 <div class="post-slide">
                     %{--<div class="score_box">7,5 <span>our score</span></div>--}%
                     <div class="post-image">
-                        <a href="${createLink(controller: 'post', action: 'details', params: [id: news?.get(it)?.id])}"><img src="${org.nest5.Media.findByPostAndIsMain(news?.get(it),true)?.file?.ruta}" width="78" height="78" alt=""></a>
+                        <a href="${createLink(controller: 'post', action: 'details', params: [id: news?.get(it)?.id,header: news?.get(it)?.address])}"><img src="${org.nest5.Media.findByPostAndIsMain(news?.get(it),true)?.file?.ruta}" width="78" height="78" alt=""></a>
                         <div class="post-cat"><span>Noticias</span></div>
                     </div>
                     <div class="post-title">
-                        <h2><a href="${createLink(controller: 'post', action: 'details', params: [id: news?.get(it)?.id])}">${news?.get(it)?.title}</a></h2>
+                        <h2><a href="${createLink(controller: 'post', action: 'details', params: [id: news?.get(it)?.id, header: news?.get(it)?.address])}">${news?.get(it)?.title}</a></h2>
                     </div>
                     <div class="post-meta"><a href="#" class="author">${news?.get(it)?.author} </a> <span class="separator">|</span> <a href="#">${news?.get(it)?.comments?.size() ?: 0} Comentarios</a></div>
                 </div>
@@ -354,12 +354,12 @@
                     <g:if test="${latest?.get(it)}">
                         <div class="post-item title-over">
                             <div class="post-image">
-                                <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" width="300" height="192" alt=""></a>
+                                <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" width="300" height="192" alt=""></a>
                                 <div class="post-cat"><span>${latest?.get(it)?.category?.name}</span></div>
                                 --}%%{--<div class="score_box">5 <span>our score</span></div>--}%%{--
                             </div>
                             <div class="post-title">
-                                <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}">${latest?.get(it)?.title}</a></h2>
+                                <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}">${latest?.get(it)?.title}</a></h2>
                             </div>
                             <div class="post-meta"><a href="#" class="author">${latest?.get(it)?.author}</a> <span class="separator">|</span> <a href="#">${latest?.get(it)?.comments?.size() ?: 0} Comentarios</a></div>
                         </div>
@@ -380,11 +380,11 @@
                                     <div class="post-slide">
                                         --}%%{--<div class="score_box">6,4 <span>our score</span></div>--}%%{--
                                         <div class="post-image">
-                                            <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" width="78" height="78" alt=""></a>
+                                            <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" width="78" height="78" alt=""></a>
                                             <div class="post-cat"><span>${latest?.get(it)?.category?.name}</span></div>
                                         </div>
                                         <div class="post-title">
-                                            <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id])}">${latest?.get(it)?.title}</a></h2>
+                                            <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}">${latest?.get(it)?.title}</a></h2>
                                         </div>
                                         <div class="post-meta"><a href="#" class="author">${latest?.get(it)?.author}</a> <span class="separator">|</span> <a href="#">${latest?.get(it)?.comments?.size() ?: 0} Comentarios</a></div>
                                     </div>

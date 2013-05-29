@@ -18,13 +18,13 @@
                     <g:set var="media" value="${Media.findByPostAndIsMain(post, true)}"/>
 
                     <li class="slide_1_2" %{--<g:if test="${post?.content?.length() * 0.015 > 50}">class="slide_1_4"</g:if><g:else>class="slide_1_2"</g:else>--}%>
-                        <a href="${createLink(controller: 'post',action: 'details', params: [id: post?.id])}"><img src="${media?.file?.ruta}" <g:if  test="${post?.content?.length() % 32 > 55}">width="233" height="300"</g:if><g:else>width="468" height="300"</g:else> alt=""></a>
+                        <a href="${createLink(controller: 'post',action: 'details', params: [id: post?.id,header: post?.address])}"><img src="${media?.file?.ruta}" <g:if  test="${post?.content?.length() % 32 > 55}">width="233" height="300"</g:if><g:else>width="468" height="300"</g:else> alt=""></a>
                         %{--<div class="score_box">6,4 <span>Ranking</span></div>--}%
                         <g:if test="${media.file.tipo == 'video'}"><span class="icon_video"></span></g:if>
 
                         <div class="slide_caption">
                             <div class="slide_tag">${post?.category?.name}</div>
-                            <a href="${createLink(controller: 'post',action: 'details', params: [id: post?.id])}">${post?.title}</a>
+                            <a href="${createLink(controller: 'post',action: 'details', params: [id: post?.id,header: post?.address])}">${post?.title}</a>
                         </div>
                     </li>
                 </g:each>
@@ -70,12 +70,12 @@
 
                 <div class="post-item title-over">
                     <div class="post-image">
-                        <a href="${createLink(controller: 'post',action: 'details',params: [id: mercadeo?.last()?.id])}"><img src="${Media.findByPostAndIsMain(mercadeo?.last(),true)?.file?.ruta}" width="460" height="258" alt=""></a>
+                        <a href="${createLink(controller: 'post',action: 'details',params: [id: mercadeo?.last()?.id,header: mercadeo?.last()?.address])}"><img src="${Media.findByPostAndIsMain(mercadeo?.last(),true)?.file?.ruta}" width="460" height="258" alt=""></a>
                         <div class="post-cat"><span>${mercadeo?.last()?.category?.name}</span></div>
                         %{--<div class="score_box">5 <span>our score</span></div>--}%
                     </div>
                     <div class="post-title">
-                        <h2><a href="${createLink(controller: 'post',action: 'details',params: [id: mercadeo?.last()?.id])}">${mercadeo?.last()?.title}</a></h2>
+                        <h2><a href="${createLink(controller: 'post',action: 'details',params: [id: mercadeo?.last()?.id,header: mercadeo?.last()?.address])}">${mercadeo?.last()?.title}</a></h2>
                     </div>
                     <div class="post-meta"><a href="#" class="author">${mercadeo?.last()?.author?.name}</a> <span class="separator">|</span> <a href="#">15 Comments</a></div>
                     <div class="post-descr">
@@ -99,7 +99,7 @@
 
                 <div class="post-item">
                     <div class="post-title">
-                        <h2><a href="${createLink(controller: 'post',action: 'details',params: [id: emprendimiento?.last()?.id])}">${emprendimiento?.last()?.title}</a></h2>
+                        <h2><a href="${createLink(controller: 'post',action: 'details',params: [id: emprendimiento?.last()?.id,header: emprendimiento?.last()?.address])}">${emprendimiento?.last()?.title}</a></h2>
                         <div class="post-cat"><span>${emprendimiento?.last()?.category?.name}</span></div>
                     </div>
                     <div class="post-meta"><a href="#" class="author">${emprendimiento?.last()?.author?.name}</a> <span class="separator">|</span> <a href="#">16 Comments</a></div>
@@ -110,7 +110,7 @@
 
             <div class="post-item">
                 <div class="post-title">
-                    <h2><a href="${createLink(controller: 'post',action: 'details',params: [id: noticias?.last()?.id])}">${noticias?.last()?.title}</a></h2>
+                    <h2><a href="${createLink(controller: 'post',action: 'details',params: [id: noticias?.last()?.id, header: noticias?.last()?.address])}">${noticias?.last()?.title}</a></h2>
                     <div class="post-cat"><span>${noticias?.last()?.category?.name}</span></div>
                 </div>
                 <div class="post-meta"><a href="#" class="author">${noticias?.last()?.author?.name}</a> <span class="separator">|</span> <a href="#">16 Comments</a></div>
@@ -133,12 +133,12 @@
 
         <div class="post-item title-over">
             <div class="post-image">
-                <a href="post-details.html"><img src="${Media.findByPostAndIsMain(tecnologia?.last(),true)?.file?.ruta}" width="300" height="192" alt=""></a>
+                <a href="${createLink(controller:'post',action: 'details',params: [id:tecnologia?.last()?.id ?: 0,header: tecnologia?.last()?.address ?: ""])}"><img src="${Media.findByPostAndIsMain(tecnologia?.last(),true)?.file?.ruta}" width="300" height="192" alt=""></a>
                 <div class="post-cat"><span>${tecnologia?.last()?.category?.name}</span></div>
                 %{--<div class="score_box">5 <span>our score</span></div>--}%
             </div>
             <div class="post-title">
-                <h2><a href="${createLink(controller:'post',action: 'details',params: [id:tecnologia?.last()?.id])}">${tecnologia?.last()?.title}</a></h2>
+                <h2><a href="${createLink(controller:'post',action: 'details',params: [id: tecnologia?.last()?.id ?: 0,header: tecnologia?.last()?.address ?: ""])}">${tecnologia?.last()?.title}</a></h2>
             </div>
             <div class="post-meta"><a href="#" class="author">${tecnologia?.last()?.author}</a> <span class="separator">|</span> <a href="#">15 Comments</a></div>
             <div class="post-descr">
@@ -148,12 +148,12 @@
 
         <div class="post-item title-over">
             <div class="post-image">
-                <a href="post-details.html"><img src="${Media.findByPostAndIsMain(emprendimiento?.last(),true)?.file?.ruta}" width="300" height="192" alt=""></a>
+                <a href="${createLink(controller:'post',action: 'details',params: [id:emprendimiento?.last()?.id,header: emprendimiento?.last()?.address])}"><img src="${Media.findByPostAndIsMain(emprendimiento?.last(),true)?.file?.ruta}" width="300" height="192" alt=""></a>
                 <div class="post-cat"><span>${emprendimiento?.last()?.category?.name}</span></div>
                 %{--<div class="score_box">5 <span>our score</span></div>--}%
             </div>
             <div class="post-title">
-                <h2><a href="${createLink(controller:'post',action: 'details',params: [id:emprendimiento?.last()?.id])}">${emprendimiento?.last()?.title}</a></h2>
+                <h2><a href="${createLink(controller:'post',action: 'details',params: [id:emprendimiento?.last()?.id,header: emprendimiento?.last()?.address])}">${emprendimiento?.last()?.title}</a></h2>
             </div>
             <div class="post-meta"><a href="#" class="author">${emprendimiento?.last()?.author}</a> <span class="separator">|</span> <a href="#">15 Comments</a></div>
             <div class="post-descr">
@@ -172,11 +172,11 @@
                         <div class="post-slide">
                             %{--<div class="score_box">6,4 <span>our score</span></div>--}%
                             <div class="post-image">
-                                <a href="post-details.html"><img src="${Media.findByPostAndIsMain(noticias?.toList().get(it),true)?.file?.ruta}" width="78" height="78" alt=""></a>
+                                <a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id,header: noticias?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain(noticias?.toList().get(it),true)?.file?.ruta}" width="78" height="78" alt=""></a>
                                 <div class="post-cat"><span>Reviews</span></div>
                             </div>
                             <div class="post-title">
-                                <h2><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id])}">${noticias?.toList().get(it)?.title}</a></h2>
+                                <h2><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id,header: noticias?.toList().get(it)?.address])}">${noticias?.toList().get(it)?.title}</a></h2>
                             </div>
                             <div class="post-meta"><a href="#" class="author">${noticias?.toList().get(it)?.author}</a> <span class="separator">|</span> <a href="#">9 Comments</a></div>
                         </div>
@@ -217,11 +217,11 @@
                   <g:if test="${all?.getAt(it)}">
                       <g:set var="actual" value="${all?.getAt(it)}"/>
                       <li>
-                          <a href="${createLink(controller: 'post',action: 'details', params: [id: actual?.id])}"><img src="${Media.findByPostAndIsMain(actual,true)?.file?.ruta}" width="221" height="140" alt=""></a>
+                          <a href="${createLink(controller: 'post',action: 'details', params: [id: actual?.id,header: actual?.address])}"><img src="${Media.findByPostAndIsMain(actual,true)?.file?.ruta}" width="221" height="140" alt=""></a>
                           <div class="slide_caption">
                               <div class="slide_tag">${actual?.category?.name}</div><a href="${createLink(controller: 'post',action: 'details', params: [id: actual?.id])}">${actual?.title}</a>
                           </div>
-                          <a href="${createLink(controller: 'post',action: 'details', params: [id: actual?.id])}" class="zoom"></a>
+                          <a href="${createLink(controller: 'post',action: 'details', params: [id: actual?.id,header: actual?.address])}" class="zoom"></a>
                       </li>
                   </g:if>
                 </g:each>
@@ -272,12 +272,12 @@
 
                 <div class="post-item image_left">
                     <div class="post-image">
-                        <a href="${createLink(controller: 'post',action: 'details', params: [id: penultimom?.id])}"><img src="${Media.findByPostAndIsMain(penultimom,true)?.file?.ruta}" width="219" height="140" alt=""></a>
+                        <a href="${createLink(controller: 'post',action: 'details', params: [id: penultimom?.id,header: penultimom?.address])}"><img src="${Media.findByPostAndIsMain(penultimom,true)?.file?.ruta}" width="219" height="140" alt=""></a>
                         <div class="post-cat"><span>${penultimom?.category?.name}</span></div>
                         %{--<div class="score_box">8,2 <span>our score</span></div>--}%
                     </div>
                     <div class="post-title">
-                        <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: penultimom?.id])}">${penultimom?.title}</a></h2>
+                        <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: penultimom?.id,header: penultimom?.address])}">${penultimom?.title}</a></h2>
                     </div>
                     <div class="post-meta"><a href="#" class="author">${penultimom?.author}</a> <span class="separator">|</span> <a href="#">31 Comments</a></div>
                     <div class="post-descr">
@@ -288,12 +288,12 @@
 
             <div class="post-item image_left">
                 <div class="post-image">
-                    <a href="${createLink(controller: 'post',action: 'details', params: [id: penultimon?.id])}"><img src="${Media.findByPostAndIsMain(penultimon,true)?.file?.ruta}" width="219" height="140" alt=""></a>
+                    <a href="${createLink(controller: 'post',action: 'details', params: [id: penultimon?.id,header:  penultimon?.address])}"><img src="${Media.findByPostAndIsMain(penultimon,true)?.file?.ruta}" width="219" height="140" alt=""></a>
                     <div class="post-cat"><span>${penultimon?.category?.name}</span></div>
                     %{--<div class="score_box">8,2 <span>our score</span></div>--}%
                 </div>
                 <div class="post-title">
-                    <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: penultimon?.id])}">${penultimon?.title}</a></h2>
+                    <h2><a href="${createLink(controller: 'post',action: 'details', params: [id: penultimon?.id,header:  penultimon?.address])}">${penultimon?.title}</a></h2>
                 </div>
                 <div class="post-meta"><a href="#" class="author">${penultimon?.author}</a> <span class="separator">|</span> <a href="#">31 Comments</a></div>
                 <div class="post-descr">
