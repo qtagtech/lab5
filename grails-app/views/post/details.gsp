@@ -350,17 +350,7 @@
                 <div class="clear"></div>
             </div>
             
-            <div class="adv_160"><script type="text/javascript"><!--
-            google_ad_client = "ca-pub-5955815527107769";
-            /* ARTICLE_RIGHT_VERTICAL */
-            google_ad_slot = "4953521139";
-            google_ad_width = 160;
-            google_ad_height = 600;
-            //-->
-            </script>
-                <script type="text/javascript"
-                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                </script></div>
+            <div class="adv_160"><script type='text/javascript' src='http://www.mmadsgadget.com/t?id=33c746ca-dc55-4a4b-9aec-bd9661c5be33&size=160x600'></script></div>
                     
     </div>
     <!--/ sidebar -->
