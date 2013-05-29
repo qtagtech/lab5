@@ -3,10 +3,10 @@ body {
 	font-size:14px;}
 	
 ::-moz-selection { 
-	background: #0c86d4;
+	background: #006e2e;
 	color: #fff;}	
 ::selection {
-	background: #0c86d4;
+	background: #006e2e;
 	color: #fff;}
 	
 h1, h2, h3, h4, h5, h6, 
@@ -98,7 +98,7 @@ h6 {font-size:16px;}
 .post-image img,
 .postThumbs .score_box,
 .posts_layout .postThumbs .score_box {
-	border-color:#0c86d4}
+	border-color:#006e2e}
 
 a:hover, a:focus,
 .cols2 .content .box_cols .col_1_2 h3,
@@ -123,7 +123,7 @@ a:hover, a:focus,
 .tf_pagination .page_current,
 .author-text a,
 .entry .post-title h2 a:hover {
-	color:#0c86d4;}
+	color:#006e2e;}
 
 .slide_caption a,
 .entry .slide_caption a,
@@ -154,7 +154,7 @@ a:hover, a:focus,
 .tabs_framed .tabs,
 .toggle.box,
 h3.toggle.box {
-	background-color:#0c86d4;}
+	background-color:#006e2e;}
 
 .link_view_grid, .link_view_list, .topsearch .btn-search {
 	background-color:#000;}
@@ -224,7 +224,7 @@ h3.toggle.box {
 input.btn-submit, input.btn-arrow,
 .comment-form .btn-submit {
 	color:#fff;
-	background-color:#0c86d4}
+	background-color:#006e2e}
 
 /* widget_nav_menu  */
 .sidebar .widget_nav_menu li,
@@ -260,7 +260,7 @@ input.btn-submit, input.btn-arrow,
 
 .comment-form .btn-submit {
 	background:none;
-	color:#0c86d4}
+	color:#006e2e}
 
 .post_carousel .prev, .post_carousel .next {
 	background-image:url(blue/arrow_prev-next.png)}

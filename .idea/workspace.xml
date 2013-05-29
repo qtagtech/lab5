@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/org/nest5/Post.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/org/nest5/Post.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/post/details.gsp" afterPath="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/template/styles/blue.css" afterPath="$PROJECT_DIR$/web-app/template/styles/blue.css" />
     </list>
     <ignored path="nest5Blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +28,6 @@
     <file path="/UrlMappings.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369842663011" ignored="false" />
     <file path="/BlogController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369085935558" ignored="false" />
     <file path="/Config.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368822528695" ignored="false" />
-    <file path="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369075580801" ignored="false" />
     <file path="/CategoryController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369237556139" ignored="false" />
     <file path="/articles.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369090808718" ignored="false" />
     <file path="/CommentController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369150581846" ignored="false" />
@@ -143,10 +137,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="details.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/post/details.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="51" selection-start="288" selection-end="292" vertical-scroll-proportion="0.33251834">
+            <state line="8" column="51" selection-start="288" selection-end="292" vertical-scroll-proportion="-1.8378378">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blue.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-app/template/styles/blue.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="261" column="46" selection-start="6385" selection-end="6385" vertical-scroll-proportion="0.29372197">
               <folding />
             </state>
           </provider>
@@ -179,15 +182,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/CommentController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="25" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -206,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/category/articles.gsp" />
@@ -222,6 +215,7 @@
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
+        <option value="$PROJECT_DIR$/web-app/template/styles/blue.css" />
       </list>
     </option>
   </component>
@@ -520,11 +514,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/category/articles.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="20" selection-start="3419" selection-end="3419" vertical-scroll-proportion="-0.3469388" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../../../SDK/grails-2.2.0/src/grails-datastore-gorm-1.1.2.RELEASE-sources.jar!/org/grails/datastore/gorm/GormStaticApi.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="0" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.33333334" />
@@ -630,7 +619,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/post/details.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="288" selection-end="292" vertical-scroll-proportion="0.33251834">
+        <state line="8" column="51" selection-start="288" selection-end="292" vertical-scroll-proportion="-1.8378378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/template/styles/blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="261" column="46" selection-start="6385" selection-end="6385" vertical-scroll-proportion="0.29372197">
           <folding />
         </state>
       </provider>
