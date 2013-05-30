@@ -4,17 +4,13 @@
 <head>
     <meta name="layout" content="main"/>
 
-<title>Nest5 Labs, El Blog - ${postInstance?.title}</title>
-<meta name="description" content="${postInstance?.content.substring(0,250)}">
+<title>Lab5 by Nest5 - ${postInstance?.title}</title>
+<meta name="description" content="${postInstance?.content.substring(0,350)}">
 <meta name="keywords" content="${postInstance?.tags}">
-
+<link rel="image_src" href="${Media.findByPostAndIsMain(postInstance,true)?.file?.ruta}"  />
+<link rel="canonical" href="http://www.nest5.org/post/details/${postInstance?.id}/${postInstance?.address}"/>
 </head>
-<body>  
-
-
-
-
-    
+<body>
 <div class="container"> 
 <!-- middle -->
 <div id="middle" class="cols2">
@@ -34,7 +30,7 @@
             
             
 	            <div class="frame_box">
-	            <img src="${Media.findByPostAndIsMain(postInstance,true).file.ruta}" width="569" height="351" alt="">
+	            <img src="${Media.findByPostAndIsMain(postInstance,true)?.file?.ruta}" width="569" height="351" alt="">
 	            </div>
 
             	<div class="row">

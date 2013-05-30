@@ -40,4 +40,8 @@ class BlogController {
         [headerPosts: headerPost,mercadeo: mercadeo,noticias: noticias,tecnologia: tecnologia,emprendimiento:emprendimiento,all:all]
 
     }
+
+    def about(){
+
+    }
 }

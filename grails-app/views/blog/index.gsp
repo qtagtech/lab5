@@ -5,8 +5,11 @@
 
 		<meta name="layout" content="main"/>
 
-		<title>Nest5, Además te informa</title>
-
+		<title>Lab5 by Nest5, Mercadeo para empresas, Emprendedores y Noticias del Medio</title>
+        <meta name="description" content="Lab5 es un laboratorio by Nest5 en el cual informamos sobre lo último en mercadeo, recomendaciones para empresas y usuarios, noticias de emprendimientos y startUps que nacen en el ecosistema cercano a Nest5. Es una publicación para todos los interesados en dichos temas.">
+        <meta name="keywords" content="Laboratorio de ideas, nest5, innovación, emprendimiento, ayuda emprendedores, ayuda mercadeo, mercadeo empresas pequeñas, mercadeo empresas, mercadeo básico">
+        <link rel="image_src" href="${resource(dir: 'template/images',file: 'nest5org-lab5-superior.jpg')}"  />
+        <link rel="canonical" href="http://www.nest5.org"/>
 	</head>
 	<body>
     <!-- top Slider -->

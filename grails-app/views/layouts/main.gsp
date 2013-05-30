@@ -8,7 +8,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><g:layoutTitle default="Lab5 - Nest5 Blog"/></title>
+		<title><g:layoutTitle default="Lab5 by Nest5 Blog"/></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
 		<link rel="apple-touch-icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}">
@@ -48,7 +48,7 @@
 
     <div class="header_container header_full">
 
-        <header style="background-image:url(${resource(dir: 'template/images',file: 'header_img_blue.jpg')}); background-color:#097bb6">
+        <header style="background-image:url(${resource(dir: 'template/images',file: 'nest5org-lab5-superior.jpg')}); background-size: cover;">
             <div class="container">
 
                 <div class="header_right">
@@ -59,14 +59,14 @@
                                 <input type="text" name="stext" id="stext" value="" class="stext">
                             </form>
                         </div>
-                        <a href="posts-grid.html" class="link_view_grid">Grid View</a> <a href="posts-list.html" class="link_view_list active">List View</a>
+                        <a href="·" class="link_view_grid">Grid View</a> <a href="·" class="link_view_list active">List View</a>
                     </div>
                 </div>
 
                 <div class="header_left">
                     <div class="logo">
-                        <a href="${createLink(controller: 'blog', action: 'index')}"><img src="${resource(dir: 'images',file: 'Nest5_Labs_Logo_small2.png')}" alt=""></a>
-                        <h1>Lab5 - El sitio informativo Nest5</h1>
+                        %{--<a href="${createLink(controller: 'blog', action: 'index')}"><img src="${resource(dir: 'images',file: 'Nest5_Labs_Logo_small2.png')}" alt=""></a>
+                        <h1>Lab5 - El sitio informativo Nest5</h1>--}%
                     </div>
                 </div>
 
@@ -333,7 +333,7 @@
         <!--/ topmenu -->
 
         <div class="topbar">
-            <div class="top_share"><span class="social_title">Social</span> %{--<a href="#" class="social_google">Google +1</a>--}% <a href="#" class="social_fb">Facebook</a> <a href="#" class="social_twitter">Twitter</a> <a href="#" class="social_pinterest">Pinterest</a></div>
+            <div class="top_share"><span class="social_title">Social</span> %{--<a href="#" class="social_google">Google +1</a>--}% <a href="http://www.facebook.com/Nest5Oficial" target="_blank" class="social_fb">Facebook</a> <a href="http://twitter.com/Nest5_Oficial" target="_blank" class="social_twitter">Twitter</a> <a href="http://pinterest.com/nest5/" target="_blank" class="social_pinterest">Pinterest</a></div>
 
             <span class="top_filter"><a href="#" class="link_mostcomm">Lo más comentado</a> <a href="#" class="link_pick">Selección de la Editora</a> <a href="#" class="link_mostlike">Lo que más gusta</a> <a href="#" class="link_random">Artículo Aleatorio</a></span>
             <div class="clear"></div>
@@ -343,7 +343,7 @@
     <g:layoutBody/>
 
     <footer>
-        <div class="container" style="background-image:url(${resource(dir: 'template/images',file: 'header_img_blue.jpg')}); background-color:#097bb6">
+        <div class="container" style="background-image:url(${resource(dir: 'template/images',file: 'nest5-lab5-inferior.jpg')}); background-size: cover; background-position: center;">
 
             <div class="footer_right">
                 <ul class="botmenu">
@@ -357,7 +357,7 @@
             </div>
 
             <div class="footer_left">
-                <img src="${resource(dir: 'images', file: 'Nest5_Labs_Logo_footer_2.png')}" width="230" height="50" alt="">
+                %{--<img src="${resource(dir: 'images', file: 'Nest5_Labs_Logo_footer_2.png')}" width="230" height="50" alt="">--}%
             </div>
 
             <div class="clear"></div>
