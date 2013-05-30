@@ -278,8 +278,8 @@
                 </li>
                 <li class="menu-level-0"><a href="#"><span>interesante</span></a>
                     <ul class="submenu-1">
-                        <li class="menu-level-2"><a href="about.html"><span>Sobre Lab5</span></a></li>
-                        <li class="menu-level-2"><a href="contact.html"><span>Contacto</span></a></li>
+                        <li class="menu-level-2"><a href="${createLink(controller: 'blog',action: 'about')}"><span>Sobre Lab5</span></a></li>
+                        <li class="menu-level-2"><a href="#"><span>Contacto</span></a></li>
                     </ul>
                 </li>
                 <li class="menu-level-0"><a href="#"><span>Publicidad</span></a>
@@ -347,10 +347,10 @@
 
             <div class="footer_right">
                 <ul class="botmenu">
-                    <li><a href="about.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="${createLink(controller: 'blog',action: 'about')}">SOBRE NOSOTROS</a></li>
                     <li><a href="#">AUTORES</a></li>
-                    <li><a href="contact.html">CONTACTO</a></li>
-                    <li><a href="advertise.html">PUBLICIDAD</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#">PUBLICIDAD</a></li>
                     <li><a href="#">PRIVACIDAD</a></li>
                     <li><a href="#">TÉRMINOS</a></li>
                 </ul>
