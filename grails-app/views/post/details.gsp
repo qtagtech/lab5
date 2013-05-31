@@ -5,7 +5,7 @@
     <meta name="layout" content="main"/>
 
 <title>Lab5 by Nest5 - ${postInstance?.title}</title>
-<meta name="description" content="${postInstance?.content.substring(0,350)}">
+<meta name="description" content="${postInstance?.intro}">
 <meta name="keywords" content="${postInstance?.tags}">
 <link rel="image_src" href="${Media.findByPostAndIsMain(postInstance,true)?.file?.ruta}"  />
 <link rel="canonical" href="http://www.nest5.org/post/details/${postInstance?.id}/${postInstance?.address}"/>
@@ -78,7 +78,7 @@
                 <script type="text/javascript"
                         src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                 </script></div>
-            <p>${postInstance?.content}</p>
+            ${postInstance?.content.decodeHTML()}
 
             %{--<p><span class="quote_right">Surface: PC makers offer no comment as reports conflict on when Microsoft gave them the news</span> HP and Acer declined to offer statements on Microsoft's product plans or its implications for the Windows 8 tablet market. Dell, however, noted that Microsoft was &quot;an important partner&quot; for the company and that it would be delivering Windows 8 tablets of its own later in the year. Lenovo toed the same line, though a company representative did state that its selection of Android and Windows-based tablets put it in a &quot;very strong position&quot; to win &quot;against all comers.&quot;</p>--}%
 

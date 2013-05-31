@@ -82,7 +82,7 @@
                     </div>
                     <div class="post-meta"><a href="#" class="author">${mercadeo?.last()?.author?.name}</a> <span class="separator">|</span> <a href="#">15 Comments</a></div>
                     <div class="post-descr">
-                        <p>${mercadeo?.last()?.content?.substring(0,150)}...</p>
+                        <p>${mercadeo?.last()?.intro}...</p>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="post-meta"><a href="#" class="author">${emprendimiento?.last()?.author?.name}</a> <span class="separator">|</span> <a href="#">16 Comments</a></div>
                     <div class="post-descr">
-                        <p>${emprendimiento?.last()?.content?.substring(0,150)}...</p>
+                        <p>${emprendimiento?.last()?.intro}...</p>
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@
                 </div>
                 <div class="post-meta"><a href="#" class="author">${noticias?.last()?.author?.name}</a> <span class="separator">|</span> <a href="#">16 Comments</a></div>
                 <div class="post-descr">
-                    <p>${noticias?.last()?.content?.substring(0,150)}...</p>
+                    <p>${noticias?.last()?.intro}...</p>
                 </div>
             </div>
 
@@ -145,7 +145,7 @@
             </div>
             <div class="post-meta"><a href="#" class="author">${tecnologia?.last()?.author}</a> <span class="separator">|</span> <a href="#">15 Comments</a></div>
             <div class="post-descr">
-                <p>${tecnologia?.last()?.content?.substring(0,150)}...</p>
+                <p>${tecnologia?.last()?.intro}...</p>
             </div>
         </div>
 
@@ -160,7 +160,7 @@
             </div>
             <div class="post-meta"><a href="#" class="author">${emprendimiento?.last()?.author}</a> <span class="separator">|</span> <a href="#">15 Comments</a></div>
             <div class="post-descr">
-                <p>${emprendimiento?.last()?.content?.substring(0,150)}...</p>
+                <p>${emprendimiento?.last()?.intro}...</p>
             </div>
         </div>
 
@@ -284,7 +284,7 @@
                     </div>
                     <div class="post-meta"><a href="#" class="author">${penultimom?.author}</a> <span class="separator">|</span> <a href="#">31 Comments</a></div>
                     <div class="post-descr">
-                        <p>${penultimom?.content?.substring(0,150)}...</p>
+                        <p>${penultimom?.intro}...</p>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -300,7 +300,7 @@
                 </div>
                 <div class="post-meta"><a href="#" class="author">${penultimon?.author}</a> <span class="separator">|</span> <a href="#">31 Comments</a></div>
                 <div class="post-descr">
-                    <p>${penultimon?.content?.substring(0,150)}...</p>
+                    <p>${penultimon?.intro}...</p>
                 </div>
                 <div class="clear"></div>
             </div>

@@ -10,6 +10,7 @@ class Post {
     String content
     Date date
     String address
+    String intro
 
 
 
@@ -21,6 +22,7 @@ class Post {
 
         category()
         title()
+        intro()
         content()
         published()
         tags()
@@ -35,5 +37,6 @@ class Post {
     static mapping = {
         content type: 'text'
         sort date: "desc"
+        intro type: 'text'
     }
 }

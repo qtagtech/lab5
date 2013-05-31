@@ -23,7 +23,9 @@
 		<g:message code="post.content.label" default="Content" />
 		
 	</label>
-	<g:textArea rows="20" cols="50" name="content" value="${postInstance?.content}"/>
+    <textarea id="wysiwyg" class="full wysiwyg" name="content"></textarea>
+
+    %{--<g:textArea rows="20" cols="50" name="content" value="${postInstance?.content}"/>--}%
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: postInstance, field: 'published', 'error')} ">
@@ -58,4 +60,10 @@
 <g:hiddenField name="archivos" id="archivos" value=""/>
 
 </div>
+
+<script>
+    $(document).ready(function(){
+        $(".wysiwyg").val('${postInstance?.intro.decodeHTML()}'+'-----'+'${(postInstance?.content.decodeHTML())}');
+    });
+</script>
 

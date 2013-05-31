@@ -39,6 +39,15 @@ class PostController {
         minus = minus.replaceAll( /([^a-zA-Z0-9\ ])/, '_' )
         minus = minus.replaceAll( /([\ ])/, '-' )
         postInstance.address = minus
+
+        /*Crear intro quitando todos los tags html*/
+        def partido = params.content.split("-----")
+        def intro = partido[0]
+       def noTags =  intro.replaceAll("<(.|\n)*?>", '').trim()
+        postInstance.content = partido[1].encodeAsHTML()
+        postInstance.intro = noTags
+
+
         if (!postInstance.save(flush: true)) {
             render(view: "create", model: [postInstance: postInstance])
             return
@@ -114,7 +123,12 @@ class PostController {
         }
 
         postInstance.properties = params
-
+        /*Crear intro quitando todos los tags html*/
+        def partido = params.content.split("-----")
+        def intro = partido[0]
+        def noTags =  intro.replaceAll("<(.|\n)*?>", '').trim()
+        postInstance.content = partido[1].encodeAsHTML()
+        postInstance.intro = noTags
         if (!postInstance.save(flush: true)) {
             render(view: "edit", model: [postInstance: postInstance])
             return
