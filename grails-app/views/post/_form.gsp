@@ -54,10 +54,18 @@
 	<g:datePicker name="date" precision="day"  value="${postInstance?.date}"  />
 </div>
 
-
+<div class="">
+    <label for="videurl">
+        <g:message code="post.video.label" default="Video" />
+        <span class="required-indicator">*</span>
+    </label>
+    <input type="text" name="videourl" value="" placeholder="inserta la ruta del video de youtube"/>
+</div>
 
 
 <g:hiddenField name="archivos" id="archivos" value=""/>
+
+
 
 </div>
 

@@ -27,10 +27,16 @@
        
     	<article class="post-detail">            
 			<div class="entry">
-            
+                <g:set var="media" value="${Media.findByPostAndIsMain(postInstance,true)}"/>
             
 	            <div class="frame_box">
-	            <img src="${Media.findByPostAndIsMain(postInstance,true)?.file?.ruta}" width="569" height="351" alt="">
+                <g:if test="${media?.file?.tipo != "video"}">
+                    <img src="${media?.file?.ruta}" width="569" height="351" alt="">
+                </g:if>
+                <g:else>
+                    <iframe width="569" height="351" src="${media?.file?.ruta}" frameborder="0" allowfullscreen></iframe>
+                </g:else>
+
 	            </div>
 
             	<div class="row">
@@ -193,8 +199,15 @@
                     <g:set var="latest" value="${org.nest5.Post.list().sort{it.date}}"/>
                     <g:each in="${[0,1,2]}">
                        <g:if test="${latest?.get(it)}">
+                           <g:set var="mediait" value="${Media.findByPostAndIsMain(latest?.get(it),true)}"/>
                            <li>
-                           <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}"><img src="${org.nest5.Media.findByPostAndIsMain(latest?.get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                               <g:if test="${mediactual?.file?.tipo != "video"}">
+                                   <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}"><img src="${mediait?.file?.ruta}" alt="" class="thumbnail"></a>
+                               </g:if>
+                               <g:else>
+                                   <a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}"><img src="http://img.youtube.com/vi/${mediait?.file?.ruta.split("embed/")[1]}/0.jpg" alt="" class="thumbnail"></a>
+                               </g:else>
+
                            <div class="recent_entry"><a href="${createLink(controller: 'post',action: 'details', params: [id: latest?.get(it)?.id,header: latest?.get(it)?.address])}" class="link-name">${latest?.get(it)?.title}</a></div>
                            </li>
                        </g:if>
@@ -217,10 +230,17 @@
         <g:set var="news" value="${org.nest5.Post.findAllByCategory(noticias).sort{it.date}}"/>
         <g:each in="${[0]}">
             <g:if test="${news?.get(it)}">
+                <g:set var="medianoti" value="${Media.findByPostAndIsMain(news?.get(it),true)}"/>
                 <div class="post-slide">
                     %{--<div class="score_box">7,5 <span>our score</span></div>--}%
                     <div class="post-image">
-                        <a href="${createLink(controller: 'post', action: 'details', params: [id: news?.get(it)?.id,header: news?.get(it)?.address])}"><img src="${org.nest5.Media.findByPostAndIsMain(news?.get(it),true)?.file?.ruta}" width="78" height="78" alt=""></a>
+                    <g:if test="${medianoti?.file?.tipo != "video"}">
+                        <a href="${createLink(controller: 'post', action: 'details', params: [id: news?.get(it)?.id,header: news?.get(it)?.address])}"><img src="${medianoti?.file?.ruta}" width="78" height="78" alt=""></a>
+                    </g:if>
+                    <g:else>
+                        <a href="${createLink(controller: 'post',action: 'details', params: [id: news?.get(it)?.id,header: news?.get(it)?.address])}"><img src="http://img.youtube.com/vi/${medianoti?.file?.ruta.split("embed/")[1]}/0.jpg" alt="" class="thumbnail"></a>
+                    </g:else>
+
                         <div class="post-cat"><span>Noticias</span></div>
                     </div>
                     <div class="post-title">

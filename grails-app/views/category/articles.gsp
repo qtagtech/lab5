@@ -18,7 +18,9 @@
             <g:each in="[0,1,2,3,4,5,6,7]">
                 <g:if test="${articles?.toList()?.getAt(it)}">
                     <li class="slide_1_4">
-                        <a href="#"><img src="${Media.findByPostAndIsMain(articles?.toList()?.getAt(it),true)?.file?.ruta}" width="233" height="300" alt=""></a>
+                        <g:set var="mediait" value="${Media.findByPostAndIsMain(articles?.toList()?.getAt(it),true)}"/>
+
+                        <a href="#"><g:if test="${mediait?.file?.tipo != "video"}"><img src="${mediait?.file?.ruta}" width="233" height="300" alt=""></g:if><g:else><img src="http://img.youtube.com/vi/${mediait?.file?.ruta.split("embed/")[1]}/0.jpg" width="233" height="300" alt=""></g:else></a>
                         <div class="slide_caption">
                             %{--<div class="slide_tag">Movies</div>--}%
                             <a href="#">${articles?.toList()?.getAt(it)?.title}</a>
@@ -61,7 +63,8 @@
                <g:each in="${articles}">
                    <div class="post-item">
                        <div class="post-image">
-                           <a href="${createLink(controller: 'post',action: 'details', params: [id: it?.id])}"><img src="${Media.findByPostAndIsMain(it,true)?.file?.ruta}" width="300" height="192" alt=""></a>
+                           <g:set var="mediait2" value="${Media.findByPostAndIsMain(it,true)}"/>
+                           <a href="${createLink(controller: 'post',action: 'details', params: [id: it?.id])}"><g:if test="${mediait2?.file?.tipo != "video"}"><img src="${mediait2?.file?.ruta}" width="233" height="300" alt=""></g:if><g:else><img src="http://img.youtube.com/vi/${mediait2?.file?.ruta.split("embed/")[1]}/0.jpg" width="233" height="300" alt=""></g:else></a>
                            %{--<div class="post-cat"><span>Reviews</span></div>--}%
                            %{--<div class="score_box">5 <span>our score</span></div>--}%
                        </div>
@@ -70,7 +73,7 @@
                        </div>
                        <div class="post-meta"><a href="#" class="author">${it?.author}</a> <span class="separator">|</span> <a href="#">15 Comments</a></div>
                        <div class="post-descr">
-                           <p>${it?.content?.substring(0,100)} ...</p>
+                           <p>${it?.intro} ...</p>
                        </div>
                        <div class="clear"></div>
                    </div>

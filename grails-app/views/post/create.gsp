@@ -35,6 +35,7 @@
 				<fieldset class="buttons">
 					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
 				</fieldset>
+
 			</g:form>
             <form name="file_upload_form" id="file_upload_form" action="#" enctype="multipart/form-data" style="">
                 <input type="file" id="fileselect" name="fileselect[]" />

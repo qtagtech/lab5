@@ -52,30 +52,50 @@ class PostController {
             render(view: "create", model: [postInstance: postInstance])
             return
         }
-        def ids = params.archivos
-        def valores = ids.split("_")
-        println(valores)
-        for(int i = 0; i < valores.size(); i++)
-        {
-            def iden = valores[i] as Long
-            println(iden)
-            def archivo = Archivo.findById(iden)
-            println(archivo)
-            if(archivo)
+            println params
+          if(!params.videourl){
+            def ids = params.archivos
+            def valores = ids.split("_")
+            println(valores)
+            for(int i = 0; i < valores.size(); i++)
             {
-                def media = new Media()
-                media.post = postInstance
-                media.file = archivo
-                media.isMain = true
-                if(!media.save(flush: true))
+                def iden = valores[i] as Long
+                println(iden)
+                def archivo = Archivo.findById(iden)
+                println(archivo)
+                if(archivo)
                 {
-                    println media.errors.allErrors
-                    /*render(view: "create", model: [planInstance: planInstance],user: springSecurityService.currentUser,editing: false)
-                    return*/
+                    def media = new Media()
+                    media.post = postInstance
+                    media.file = archivo
+                    media.isMain = true
+                    if(!media.save(flush: true))
+                    {
+                        println media.errors.allErrors
+                        /*render(view: "create", model: [planInstance: planInstance],user: springSecurityService.currentUser,editing: false)
+                        return*/
+                    }
                 }
             }
         }
-
+        else{
+              def arch = new Archivo(
+                       name: 'video'+postInstance.address,
+                       tipo: 'video',
+                       ruta: params.videourl,
+                       description: "NA"
+              ).save(failOnError: true)
+              def media = new Media()
+              media.post = postInstance
+              media.file = arch
+              media.isMain = true
+              if(!media.save(flush: true))
+              {
+                  println media.errors.allErrors
+                  /*render(view: "create", model: [planInstance: planInstance],user: springSecurityService.currentUser,editing: false)
+                  return*/
+              }
+          }
         flash.message = message(code: 'default.created.message', args: [message(code: 'post.label', default: 'Post'), postInstance.id])
         redirect(action: "show", id: postInstance.id)
     }

@@ -2,26 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94bac563-972d-4a77-836d-2d3bb8053ae0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/jwysiwyg/jquery.wysiwyg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/jwysiwyg/jquery.wysiwyg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/jwysiwyg/jquery.wysiwyg.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/jwysiwyg/jquery.wysiwyg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/org/nest5/Post.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/org/nest5/Post.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/post/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/post/_form.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/category/articles.gsp" afterPath="$PROJECT_DIR$/grails-app/views/category/articles.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/post/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/post/create.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/post/details.gsp" afterPath="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/post/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/post/edit.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nest5Blog-grailsPlugins.iml" afterPath="$PROJECT_DIR$/nest5Blog-grailsPlugins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/template/style.css" afterPath="$PROJECT_DIR$/web-app/template/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nest5Blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/main.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369933382797" ignored="false" />
-    <file path="/Dummy.txt" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370018072482" ignored="false" />
-    <file path="/index.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370017951018" ignored="false" />
+    <file path="/main.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370363790500" ignored="false" />
+    <file path="/Dummy.txt" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370360814627" ignored="false" />
+    <file path="/index.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370365998181" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/Grails/lib/grails_integration.jar!/org/jetbrains/plugins/grails/lang/gsp/resolve/taglib/tld/grails.tld" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368200277007" ignored="false" />
     <file path="/a.dummy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369069678517" ignored="false" />
     <file path="/Category.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368632481285" ignored="false" />
@@ -33,21 +30,22 @@
     <file path="/BootStrap.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368569932438" ignored="false" />
     <file path="/fragment.java" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368563255166" ignored="false" />
     <file path="/MyuploadController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368566428224" ignored="false" />
-    <file path="/PostController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370028515296" ignored="false" />
-    <file path="/_form.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370028439318" ignored="false" />
-    <file path="/create.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370019683006" ignored="false" />
-    <file path="/details.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370020352138" ignored="false" />
+    <file path="/PostController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370037183351" ignored="false" />
+    <file path="/_form.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370037347812" ignored="false" />
+    <file path="/create.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370036293433" ignored="false" />
+    <file path="/details.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370036119322" ignored="false" />
     <file path="/UrlMappings.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369930277872" ignored="false" />
     <file path="/BlogController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369930261559" ignored="false" />
     <file path="/Config.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1368822528695" ignored="false" />
     <file path="/CategoryController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369237556139" ignored="false" />
-    <file path="/articles.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369090808718" ignored="false" />
+    <file path="/articles.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370365219898" ignored="false" />
     <file path="/CommentController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369150581846" ignored="false" />
     <file path="/UserController.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369165392405" ignored="false" />
     <file path="/about.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369932350915" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/org/nest5/EmailControllerTests.groovy" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369955582495" ignored="false" />
     <file path="/newsletter.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1369955645198" ignored="false" />
     <file path="/edit.gsp" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370018750233" ignored="false" />
+    <file path="/style.css" changelist="94bac563-972d-4a77-836d-2d3bb8053ae0" time="1370366031008" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -99,6 +96,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -111,34 +109,34 @@
       <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="52" selection-start="4287" selection-end="4292" vertical-scroll-proportion="-1.9324324">
+            <state line="389" column="29" selection-start="19495" selection-end="19495" vertical-scroll-proportion="-3.3648648">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/post/details.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="46" selection-start="3647" selection-end="3657" vertical-scroll-proportion="-1.9324324">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PostController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="14" selection-start="3657" selection-end="3663" vertical-scroll-proportion="-0.102564104">
+            <state line="5" column="25" selection-start="150" selection-end="150" vertical-scroll-proportion="-2.9565217">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blue.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/template/styles/blue.css">
+      <file leaf-file-name="CategoryController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/CategoryController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="326" column="13" selection-start="7786" selection-end="7792" vertical-scroll-proportion="0.0">
+            <state line="5" column="6" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.9565217">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Archivo.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/org/nest5/Archivo.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="4" selection-start="76" selection-end="142" vertical-scroll-proportion="-3.6956522">
               <folding />
             </state>
           </provider>
@@ -155,10 +153,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="38" selection-start="1514" selection-end="1543" vertical-scroll-proportion="-6.4615383">
+            <state line="61" column="57" selection-start="3453" selection-end="3457" vertical-scroll-proportion="0.33227345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articles.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/category/articles.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="52" selection-start="3339" selection-end="3339" vertical-scroll-proportion="-5.256757">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/template/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="695" column="19" selection-start="16598" selection-end="16598" vertical-scroll-proportion="-19.6">
               <folding />
             </state>
           </provider>
@@ -167,29 +183,29 @@
       <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/post/create.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="54" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-2.9864864">
+            <state line="43" column="16" selection-start="2039" selection-end="2039" vertical-scroll-proportion="-0.3469388">
               <folding>
-                <marker date="1370020141498" expanded="true" signature="383:392" placeholder="&lt;xml/&gt;" />
-                <marker date="1370020141498" expanded="true" signature="576:809" placeholder="&lt;xml/&gt;" />
-                <marker date="1370020141498" expanded="true" signature="821:2067" placeholder="&lt;xml/&gt;" />
-                <marker date="1370020141498" expanded="true" signature="1693:2058" placeholder="&lt;xml/&gt;" />
-                <marker date="1370020141498" expanded="true" signature="2116:6616" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="2162:2203" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="2272:3856" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="2359:3843" placeholder="{&quot;url&quot;: ' fpwmx8th2p8v2 '...}" />
-                <marker date="1370020141498" expanded="true" signature="2532:2904" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="2633:2854" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="2635:2735" placeholder="//..." />
-                <marker date="1370020141498" expanded="true" signature="2962:3584" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="2983:3062" placeholder="//..." />
-                <marker date="1370020141498" expanded="true" signature="3120:3565" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="3143:3247" placeholder="//..." />
-                <marker date="1370020141498" expanded="true" signature="3901:4175" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="3937:4165" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="3939:4067" placeholder="//..." />
-                <marker date="1370020141498" expanded="true" signature="4209:6604" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="4237:6590" placeholder="{...}" />
-                <marker date="1370020141498" expanded="true" signature="6745:6754" placeholder="&lt;xml/&gt;" />
+                <marker date="1370037292748" expanded="true" signature="383:392" placeholder="&lt;xml/&gt;" />
+                <marker date="1370037292748" expanded="true" signature="576:809" placeholder="&lt;xml/&gt;" />
+                <marker date="1370037292748" expanded="true" signature="821:2068" placeholder="&lt;xml/&gt;" />
+                <marker date="1370037292748" expanded="true" signature="1694:2059" placeholder="&lt;xml/&gt;" />
+                <marker date="1370037292748" expanded="true" signature="2117:6617" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="2163:2204" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="2273:3857" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="2360:3844" placeholder="{&quot;url&quot;: ' fpwmx8th2p8v2 '...}" />
+                <marker date="1370037292748" expanded="true" signature="2533:2905" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="2634:2855" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="2636:2736" placeholder="//..." />
+                <marker date="1370037292748" expanded="true" signature="2963:3585" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="2984:3063" placeholder="//..." />
+                <marker date="1370037292748" expanded="true" signature="3121:3566" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="3144:3248" placeholder="//..." />
+                <marker date="1370037292748" expanded="true" signature="3902:4176" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="3938:4166" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="3940:4068" placeholder="//..." />
+                <marker date="1370037292748" expanded="true" signature="4210:6605" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="4238:6591" placeholder="{...}" />
+                <marker date="1370037292748" expanded="true" signature="6746:6755" placeholder="&lt;xml/&gt;" />
               </folding>
             </state>
           </provider>
@@ -198,30 +214,12 @@
       <file leaf-file-name="edit.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/post/edit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="113" selection-start="380" selection-end="380" vertical-scroll-proportion="7.979592">
+            <state line="7" column="113" selection-start="380" selection-end="380" vertical-scroll-proportion="-0.3469388">
               <folding>
                 <marker date="1370018790990" expanded="true" signature="2240:4543" placeholder="{...}" />
                 <marker date="1370018790990" expanded="true" signature="2272:4535" placeholder="{...}" />
                 <marker date="1370018790990" expanded="true" signature="2296:4525" placeholder="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/post/_form.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="111" selection-start="2094" selection-end="2094" vertical-scroll-proportion="-3.6756756">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/blog/about.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="172" selection-start="3678" selection-end="3678" vertical-scroll-proportion="-0.3469388">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -244,22 +242,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/UserController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/CategoryController.groovy" />
         <option value="$PROJECT_DIR$/web-app/template/styles/blue.css" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/blog/about.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/EmailController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/email/newsletter.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/org/nest5/Post.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/post/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/post/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/post/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/post/_form.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/post/details.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/category/articles.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/blog/index.gsp" />
+        <option value="$PROJECT_DIR$/web-app/template/style.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       </list>
     </option>
   </component>
@@ -312,12 +310,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -326,13 +324,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:nest5Blog">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -345,10 +340,13 @@
       <setting name="launchBrowser" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -357,19 +355,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -398,6 +383,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -467,19 +465,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17824967" sideWeight="0.7559275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17824967" sideWeight="0.6703755" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -490,12 +489,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2027027" sideWeight="0.75313807" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24407253" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24200279" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32267037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -564,39 +562,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/CategoryController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="164" selection-start="4965" selection-end="4965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/BlogController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="8" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.82828283">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="50" selection-start="319" selection-end="319" vertical-scroll-proportion="0.3938224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/EmailController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="86" selection-end="86" vertical-scroll-proportion="0.17761195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/email/newsletter.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="46" selection-start="555" selection-end="555" vertical-scroll-proportion="-0.3469388">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/template/styles/blue.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="326" column="13" selection-start="7786" selection-end="7792" vertical-scroll-proportion="0.0">
@@ -612,25 +577,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/org/nest5/Post.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="1.4106383">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/post/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="52" selection-start="4287" selection-end="4292" vertical-scroll-proportion="-1.9324324">
+        <state line="62" column="9" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.grails/2.2.2/projects/nest5Blog/plugins/cache-1.0.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="0" selection-start="7949" selection-end="7949" vertical-scroll-proportion="0.3326886" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/post/details.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="46" selection-start="3647" selection-end="3657" vertical-scroll-proportion="-1.9324324">
+        <state line="36" column="38" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -644,45 +614,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="1514" selection-end="1543" vertical-scroll-proportion="-6.4615383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/post/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="54" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-2.9864864">
-          <folding>
-            <marker date="1370020141498" expanded="true" signature="383:392" placeholder="&lt;xml/&gt;" />
-            <marker date="1370020141498" expanded="true" signature="576:809" placeholder="&lt;xml/&gt;" />
-            <marker date="1370020141498" expanded="true" signature="821:2067" placeholder="&lt;xml/&gt;" />
-            <marker date="1370020141498" expanded="true" signature="1693:2058" placeholder="&lt;xml/&gt;" />
-            <marker date="1370020141498" expanded="true" signature="2116:6616" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="2162:2203" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="2272:3856" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="2359:3843" placeholder="{&quot;url&quot;: ' fpwmx8th2p8v2 '...}" />
-            <marker date="1370020141498" expanded="true" signature="2532:2904" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="2633:2854" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="2635:2735" placeholder="//..." />
-            <marker date="1370020141498" expanded="true" signature="2962:3584" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="2983:3062" placeholder="//..." />
-            <marker date="1370020141498" expanded="true" signature="3120:3565" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="3143:3247" placeholder="//..." />
-            <marker date="1370020141498" expanded="true" signature="3901:4175" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="3937:4165" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="3939:4067" placeholder="//..." />
-            <marker date="1370020141498" expanded="true" signature="4209:6604" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="4237:6590" placeholder="{...}" />
-            <marker date="1370020141498" expanded="true" signature="6745:6754" placeholder="&lt;xml/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/post/edit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="113" selection-start="380" selection-end="380" vertical-scroll-proportion="7.979592">
+        <state line="7" column="113" selection-start="380" selection-end="380" vertical-scroll-proportion="-0.3469388">
           <folding>
             <marker date="1370018790990" expanded="true" signature="2240:4543" placeholder="{...}" />
             <marker date="1370018790990" expanded="true" signature="2272:4535" placeholder="{...}" />
@@ -691,16 +625,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/post/_form.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="111" selection-start="2094" selection-end="2094" vertical-scroll-proportion="-3.6756756">
+        <state line="5" column="25" selection-start="150" selection-end="150" vertical-scroll-proportion="-2.9565217">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/PostController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/nest5/CategoryController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="14" selection-start="3657" selection-end="3663" vertical-scroll-proportion="-0.102564104">
+        <state line="5" column="6" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.9565217">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/post/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="16" selection-start="2039" selection-end="2039" vertical-scroll-proportion="-0.3469388">
+          <folding>
+            <marker date="1370037292748" expanded="true" signature="383:392" placeholder="&lt;xml/&gt;" />
+            <marker date="1370037292748" expanded="true" signature="576:809" placeholder="&lt;xml/&gt;" />
+            <marker date="1370037292748" expanded="true" signature="821:2068" placeholder="&lt;xml/&gt;" />
+            <marker date="1370037292748" expanded="true" signature="1694:2059" placeholder="&lt;xml/&gt;" />
+            <marker date="1370037292748" expanded="true" signature="2117:6617" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="2163:2204" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="2273:3857" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="2360:3844" placeholder="{&quot;url&quot;: ' fpwmx8th2p8v2 '...}" />
+            <marker date="1370037292748" expanded="true" signature="2533:2905" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="2634:2855" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="2636:2736" placeholder="//..." />
+            <marker date="1370037292748" expanded="true" signature="2963:3585" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="2984:3063" placeholder="//..." />
+            <marker date="1370037292748" expanded="true" signature="3121:3566" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="3144:3248" placeholder="//..." />
+            <marker date="1370037292748" expanded="true" signature="3902:4176" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="3938:4166" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="3940:4068" placeholder="//..." />
+            <marker date="1370037292748" expanded="true" signature="4210:6605" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="4238:6591" placeholder="{...}" />
+            <marker date="1370037292748" expanded="true" signature="6746:6755" placeholder="&lt;xml/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/category/articles.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="52" selection-start="3339" selection-end="3339" vertical-scroll-proportion="-5.256757">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/org/nest5/Archivo.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="76" selection-end="142" vertical-scroll-proportion="-3.6956522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/blog/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="389" column="29" selection-start="19495" selection-end="19495" vertical-scroll-proportion="-3.3648648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/template/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="695" column="19" selection-start="16598" selection-end="16598" vertical-scroll-proportion="-19.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="57" selection-start="3453" selection-end="3457" vertical-scroll-proportion="0.33227345">
           <folding />
         </state>
       </provider>

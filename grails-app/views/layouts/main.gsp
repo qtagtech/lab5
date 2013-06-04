@@ -99,7 +99,7 @@
                                     </g:if>
                                 </g:each>
                             </ul>
-                            <div class="more-nav"><a href=${createLink(controller: 'category',action: 'articles',params: [id: 'noticias'])}">Ver todo en Noticias</a></div>
+                            <div class="more-nav"><a href="${createLink(controller: 'category',action: 'articles',params: [id: 'noticias'])}">Ver todo en Noticias</a></div>
                         </div>
                         <!--/ widget recent entries -->
                     </li>
@@ -112,7 +112,8 @@
                                 <g:each in="${[0,1]}">
                                     <g:if test="${noticias?.toList()?.getAt(it)}">
                                         <li>
-                                            <a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id, header:  noticias?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain( noticias?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                            <g:set var="mediait" value="${Media.findByPostAndIsMain(noticias?.toList().get(it),true)}"/>
+                                            <a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id, header:  noticias?.toList().get(it)?.address])}"> <g:if test="${mediait?.file?.tipo != "video"}"><img src="${mediait?.file?.ruta}" class="thumbnail" alt=""></g:if><g:else><img src="http://img.youtube.com/vi/${mediait?.file?.ruta.split("embed/")[1]}/0.jpg" class="thumbnail" alt=""></g:else></a>
                                             <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: noticias?.toList().get(it)?.id, header:  noticias?.toList().get(it)?.address])}" class="link-name">${noticias?.toList().get(it)?.title}</a></div>
                                         </li>
                                     </g:if>
@@ -125,7 +126,7 @@
                     <li class="menu-level-1"><a href="#"><span>Autores</span></a>
                         <ul class="submenu-2">
                             <g:each in="${org.nest5.Category.findByAlias('noticias')?.posts?.collect{it.author}?.unique()}">
-                                <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                <li class="menu-level-2"><a href="#"><span>${it}</span></a></li>
                             </g:each>
                         </ul>
                     </li>
@@ -159,8 +160,9 @@
                                 %{--AQUI HACER ALGO DE RECOMENDADOS, SEA PARA EL USUARIO, POR MAYOR NÚMERO DE VISITAS O LO QUE SEA--}%
                                     <g:each in="${[0,1]}">
                                         <g:if test="${mercadeo?.toList()?.getAt(it)}">
+                                            <g:set var="mediait2" value="${Media.findByPostAndIsMain( mercadeo?.toList().get(it),true)}"/>
                                             <li>
-                                                <a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id,header: mercadeo?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain( mercadeo?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id,header: mercadeo?.toList().get(it)?.address])}"><g:if test="${mediait2?.file?.tipo != "video"}"><img src="${mediait2?.file?.ruta}" class="thumbnail" alt=""></g:if><g:else><img src="http://img.youtube.com/vi/${mediait2?.file?.ruta.split("embed/")[1]}/0.jpg" class="thumbnail" alt=""></g:else></a>
                                                 <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: mercadeo?.toList().get(it)?.id,header:  mercadeo?.toList().get(it)?.address])}" class="link-name">${mercadeo?.toList().get(it)?.title}</a></div>
                                             </li>
                                         </g:if>
@@ -173,7 +175,7 @@
                         <li class="menu-level-1"><a href="#"><span>Autores</span></a>
                             <ul class="submenu-2">
                                 <g:each in="${org.nest5.Category.findByAlias('mercadeo')?.posts?.collect{it.author}?.unique()}">
-                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                    <li class="menu-level-2"><a href="#"><span>${it}</span></a></li>
                                 </g:each>
                             </ul>
                         </li>
@@ -208,7 +210,8 @@
                                     <g:each in="${[0,1]}">
                                         <g:if test="${emprendimiento?.toList()?.getAt(it)}">
                                             <li>
-                                                <a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id, header: emprendimiento?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain( emprendimiento?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <g:set var="mediait3" value="${Media.findByPostAndIsMain( emprendimiento?.toList().get(it),true)}"/>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id, header: emprendimiento?.toList().get(it)?.address])}"><g:if test="${mediait3?.file?.tipo != "video"}"><img src="${mediait3?.file?.ruta}" class="thumbnail" alt=""></g:if><g:else><img src="http://img.youtube.com/vi/${mediait3?.file?.ruta.split("embed/")[1]}/0.jpg" class="thumbnail" alt=""></g:else></a>
                                                 <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: emprendimiento?.toList().get(it)?.id,header: emprendimiento?.toList().get(it)?.address])}" class="link-name">${emprendimiento?.toList().get(it)?.title}</a></div>
                                             </li>
                                         </g:if>
@@ -221,7 +224,7 @@
                         <li class="menu-level-1"><a href="#"><span>Autores</span></a>
                             <ul class="submenu-2">
                                 <g:each in="${org.nest5.Category.findByAlias('emprendimiento')?.posts?.collect{it.author}?.unique()}">
-                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                    <li class="menu-level-2"><a href="#"><span>${it}</span></a></li>
                                 </g:each>
                             </ul>
                         </li>
@@ -256,7 +259,8 @@
                                     <g:each in="${[0,1]}">
                                         <g:if test="${tecnologia?.toList()?.getAt(it)}">
                                             <li>
-                                                <a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id,header: tecnologia?.toList().get(it)?.address])}"><img src="${Media.findByPostAndIsMain( tecnologia?.toList().get(it),true)?.file?.ruta}" alt="" class="thumbnail"></a>
+                                                <g:set var="mediait4" value="${Media.findByPostAndIsMain( tecnologia?.toList().get(it),true)}"/>
+                                                <a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id,header: tecnologia?.toList().get(it)?.address])}"><g:if test="${mediait4?.file?.tipo != "video"}"><img src="${mediait4?.file?.ruta}" class="thumbnail" alt=""></g:if><g:else><img src="http://img.youtube.com/vi/${mediait4?.file?.ruta.split("embed/")[1]}/0.jpg" class="thumbnail" alt=""></g:else></a>
                                                 <div class="recent_entry"><a href="${createLink(controller: 'post',action:'details',params: [id: tecnologia?.toList().get(it)?.id,header: tecnologia?.toList().get(it)?.address])}" class="link-name">${tecnologia?.toList().get(it)?.title}</a></div>
                                             </li>
                                         </g:if>
@@ -269,7 +273,7 @@
                         <li class="menu-level-1"><a href="#"><span>Autores</span></a>
                             <ul class="submenu-2">
                                 <g:each in="${org.nest5.Category.findByAlias('tecnologia')?.posts?.collect{it.author}?.unique()}">
-                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                    <li class="menu-level-2"><a href="#"><span>${it}</span></a></li>
                                 </g:each>
                             </ul>
                         </li>
@@ -295,28 +299,28 @@
                         <li class="menu-level-1"><a href="#"><span>Noticias</span></a>
                             <ul class="submenu-2">
                                 <g:each in="${org.nest5.Category.findByAlias('noticias')?.posts?.collect{it.author}?.unique()}">
-                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                    <li class="menu-level-2"><a href="#"><span>${it}</span></a></li>
                                 </g:each>
                             </ul>
                         </li>
                         <li class="menu-level-1"><a href="#"><span>Mercadeo</span></a>
                             <ul class="submenu-2">
                                 <g:each in="${org.nest5.Category.findByAlias('mercadeo')?.posts?.collect{it.author}?.unique()}">
-                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                    <li class="menu-level-2"><a href="#"><span>${it}</span></a></li>
                                 </g:each>
                             </ul>
                         </li>
                         <li class="menu-level-1"><a href="#"><span>Emprendimiento</span></a>
                             <ul class="submenu-2">
                                 <g:each in="${org.nest5.Category.findByAlias('emprendimiento')?.posts?.collect{it.author}?.unique()}">
-                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                    <li class="menu-level-2"><a href="#"><span>${it}</span></a></li>
                                 </g:each>
                             </ul>
                         </li>
                         <li class="menu-level-1"><a href="#"><span>Tecnología</span></a>
                             <ul class="submenu-2">
                                 <g:each in="${org.nest5.Category.findByAlias('tecnología')?.posts?.collect{it.author}?.unique()}">
-                                    <li class="menu-level-2"><a href="posts-grid.html"><span>${it}</span></a></li>
+                                    <li class="menu-level-2"><a href="#"><span>${it}</span></a></li>
                                 </g:each>
                             </ul>
                         </li>
