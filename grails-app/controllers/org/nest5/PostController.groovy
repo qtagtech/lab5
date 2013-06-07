@@ -1,5 +1,6 @@
 package org.nest5
 
+import grails.converters.JSON
 import grails.plugins.springsecurity.Secured
 import org.springframework.dao.DataIntegrityViolationException
 
@@ -206,6 +207,18 @@ class PostController {
          minus = minus.replaceAll( /([^a-zA-Z0-9\ ])/, '_' )
          minus = minus.replaceAll( /([\ ])/, '-' )
         render minus
+        return
+    }
+
+    def feed(){
+
+        def postInstanceList = Post.list([max: 4, offset: 0]).sort {it.date}
+        def posts = []
+        postInstanceList.each {
+            posts += [title: it.title, address: it.address, intro: it.intro, author: it.author.email, date: formatDate([date: it.date, style: 'short', type: 'date', locale: 'es_CO']), category: it.category.name]
+        }
+
+        render posts as JSON
         return
     }
 }
