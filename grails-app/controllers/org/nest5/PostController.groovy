@@ -215,7 +215,7 @@ class PostController {
         def postInstanceList = Post.list([max: 4, offset: 0]).sort {it.date}
         def posts = []
         postInstanceList.each {
-            posts += [title: it.title, address: it.address, intro: it.intro, author: it.author.email, date: formatDate([date: it.date, style: 'short', type: 'date', locale: 'es_CO']), category: it.category.name]
+            posts += [id: it.id, title: it.title, address: it.address, intro: it.intro, author: it.author.email, date: formatDate([date: it.date, style: 'short', type: 'date', locale: 'es_CO']), category: it.category.name]
         }
 
         render posts as JSON
