@@ -57,8 +57,6 @@ grails.project.dependency.resolution = {
         build ":tomcat:$grailsVersion"
         runtime ":database-migration:1.2.1"
         compile ':cache:1.0.1'
-        compile ":heroku:1.0.1"
-        compile ':cloud-support:1.0.8'
         compile ":spring-security-core:1.2.7.3"
         runtime ":modernizr:2.6.2"
 //        compile ":mail:1.0.1"
