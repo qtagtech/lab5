@@ -59,8 +59,8 @@ CSS STRUCTURE:
 	- Blog post list
 	- Pagination and Navigation
 	- Author description 
-	- Comment list
-	- Comment form / Contact form
+	- Comentario list
+	- Comentario form / Contact form
 ------------------------------------------------*/
 
 /*============================================================================================*/
@@ -3874,7 +3874,7 @@ h3.toggle.box {
 	margin-right:10px}
 
 /*----------------------------------------------*/
-/* Comment list */
+/* Comentario list */
 /*----------------------------------------------*/
 .comment-list {
 	position:relative;
@@ -3996,7 +3996,7 @@ a.link-author:hover {
 	padding-left:62px}
 
 /*----------------------------------------------*/
-/* Comment form / Contact form */
+/* Comentario form / Contact form */
 /*----------------------------------------------*/
 .add-comment {
 	margin:30px 0 10px;}

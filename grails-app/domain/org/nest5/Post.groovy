@@ -2,7 +2,7 @@ package org.nest5
 
 class Post {
     static belongsTo = [category: Category]
-    static hasMany = [media: Media, comments: Comment]
+    static hasMany = [media: Media, comentarios: Comentario]
     String title
     String tags
     Boolean published

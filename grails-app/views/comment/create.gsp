@@ -1,9 +1,9 @@
-<%@ page import="org.nest5.Comment" %>
+<%@ page import="org.nest5.Comentario" %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'comment.label', default: 'Comment')}" />
+		<g:set var="entityName" value="${message(code: 'comment.label', default: 'Comentario')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 	</head>
 	<body>

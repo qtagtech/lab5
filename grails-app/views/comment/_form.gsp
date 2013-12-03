@@ -1,4 +1,4 @@
-<%@ page import="org.nest5.Comment" %>
+<%@ page import="org.nest5.Comentario" %>
 
 
 

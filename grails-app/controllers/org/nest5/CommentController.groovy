@@ -3,7 +3,7 @@ package org.nest5
 import grails.plugins.springsecurity.Secured
 import org.springframework.dao.DataIntegrityViolationException
 
-class CommentController {
+class ComentarioController {
     def springSecurityService
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
     @Secured(["ROLE_ADMIN"])
@@ -13,92 +13,92 @@ class CommentController {
     @Secured(["ROLE_ADMIN"])
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        [commentInstanceList: Comment.list(params), commentInstanceTotal: Comment.count()]
+        [ComentarioInstanceList: Comentario.list(params), ComentarioInstanceTotal: Comentario.count()]
     }
     @Secured(["ROLE_ADMIN"])
     def create() {
-        [commentInstance: new Comment(params)]
+        [ComentarioInstance: new Comentario(params)]
     }
 
     def save() {
-        def commentInstance = new Comment()
-        commentInstance.properties = params
-        commentInstance.date = new Date()
-        if (!commentInstance.save(flush: true)) {
+        def ComentarioInstance = new Comentario()
+        ComentarioInstance.properties = params
+        ComentarioInstance.date = new Date()
+        if (!ComentarioInstance.save(flush: true)) {
             redirect(controller: 'post', action: 'details', params: [id: params.post.id])
             return
         }
 
-        //flash.message = message(code: 'default.created.message', args: [message(code: 'comment.label', default: 'Comment'), commentInstance.id])
+        //flash.message = message(code: 'default.created.message', args: [message(code: 'Comentario.label', default: 'Comentario'), ComentarioInstance.id])
         redirect(controller: 'post', action: 'details', params: [id: params.post.id])
     }
     @Secured(["ROLE_ADMIN"])
     def show(Long id) {
-        def commentInstance = Comment.get(id)
-        if (!commentInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'comment.label', default: 'Comment'), id])
+        def ComentarioInstance = Comentario.get(id)
+        if (!ComentarioInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'Comentario.label', default: 'Comentario'), id])
             redirect(action: "list")
             return
         }
 
-        [commentInstance: commentInstance]
+        [ComentarioInstance: ComentarioInstance]
     }
     @Secured(["ROLE_ADMIN"])
     def edit(Long id) {
-        def commentInstance = Comment.get(id)
-        if (!commentInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'comment.label', default: 'Comment'), id])
+        def ComentarioInstance = Comentario.get(id)
+        if (!ComentarioInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'Comentario.label', default: 'Comentario'), id])
             redirect(action: "list")
             return
         }
 
-        [commentInstance: commentInstance]
+        [ComentarioInstance: ComentarioInstance]
     }
     @Secured(["ROLE_ADMIN"])
     def update(Long id, Long version) {
-        def commentInstance = Comment.get(id)
-        if (!commentInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'comment.label', default: 'Comment'), id])
+        def ComentarioInstance = Comentario.get(id)
+        if (!ComentarioInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'Comentario.label', default: 'Comentario'), id])
             redirect(action: "list")
             return
         }
 
         if (version != null) {
-            if (commentInstance.version > version) {
-                commentInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
-                        [message(code: 'comment.label', default: 'Comment')] as Object[],
-                        "Another user has updated this Comment while you were editing")
-                render(view: "edit", model: [commentInstance: commentInstance])
+            if (ComentarioInstance.version > version) {
+                ComentarioInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                        [message(code: 'Comentario.label', default: 'Comentario')] as Object[],
+                        "Another user has updated this Comentario while you were editing")
+                render(view: "edit", model: [ComentarioInstance: ComentarioInstance])
                 return
             }
         }
 
-        commentInstance.properties = params
+        ComentarioInstance.properties = params
 
-        if (!commentInstance.save(flush: true)) {
-            render(view: "edit", model: [commentInstance: commentInstance])
+        if (!ComentarioInstance.save(flush: true)) {
+            render(view: "edit", model: [ComentarioInstance: ComentarioInstance])
             return
         }
 
-        flash.message = message(code: 'default.updated.message', args: [message(code: 'comment.label', default: 'Comment'), commentInstance.id])
-        redirect(action: "show", id: commentInstance.id)
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'Comentario.label', default: 'Comentario'), ComentarioInstance.id])
+        redirect(action: "show", id: ComentarioInstance.id)
     }
     @Secured(["ROLE_ADMIN"])
     def delete(Long id) {
-        def commentInstance = Comment.get(id)
-        if (!commentInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'comment.label', default: 'Comment'), id])
+        def ComentarioInstance = Comentario.get(id)
+        if (!ComentarioInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'Comentario.label', default: 'Comentario'), id])
             redirect(action: "list")
             return
         }
 
         try {
-            commentInstance.delete(flush: true)
-            flash.message = message(code: 'default.deleted.message', args: [message(code: 'comment.label', default: 'Comment'), id])
+            ComentarioInstance.delete(flush: true)
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'Comentario.label', default: 'Comentario'), id])
             redirect(action: "list")
         }
         catch (DataIntegrityViolationException e) {
-            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'comment.label', default: 'Comment'), id])
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'Comentario.label', default: 'Comentario'), id])
             redirect(action: "show", id: id)
         }
     }

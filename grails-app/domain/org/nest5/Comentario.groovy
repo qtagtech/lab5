@@ -1,6 +1,6 @@
 package org.nest5
 
-class Comment {
+class Comentario {
     static belongsTo = [post: Post]
 
     String email
